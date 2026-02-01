@@ -1,0 +1,81 @@
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0f1c2d; /* match your brand theme */
+      color: #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .nav {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #144961;
+    }
+
+    .nav a.logo {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .nav a.logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .thank-you-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .thank-you-container h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    .thank-you-container p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      padding: 14px 36px;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      backdrop-filter: blur(2px);
+    }
+
+    .btn-home:hover {
+      background: #ffffff;
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      padding: 40px;
+      background: #144961;
+      text-align: center;
+      color: #fff;
+    }

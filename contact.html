@@ -31,24 +31,23 @@
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
-  
 </header>
 
    <!-- CONTACT SECTION -->
   <section class="contact">
-    <h1 class="fade-up">Let’s get your business lumonated.</h1>
+    <h1 class="fade-up">Let’s get your business lumonated.</h1>   
+   <form class="contact-form fade-up delay-2" name="contact" netlify data-netlify-honeypot="bot-field" action="thank-you.html"> 
 
-    <form class="contact-form fade-up delay-2"> 
       <div class="row">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
+        <input type="text" placeholder="First Name" aria-label="First Name" required>
+        <input type="text" placeholder="Last Name" aria-label="Last Name" required>
       </div>
 
-      <input type="email" placeholder="Email" required>
+      <input type="email" placeholder="Email" aria-label="Email" required>
 
       <textarea placeholder="Message" rows="5" required></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Submit</button> 
     </form>
   </section>
 
