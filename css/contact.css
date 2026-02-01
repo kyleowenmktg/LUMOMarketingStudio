@@ -34,6 +34,10 @@
   flex-shrink: 1;           /* allows links to shrink */
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .nav nav a {
   white-space: nowrap;      /* prevent wrapping */
   flex-shrink: 1;           /* allow link text to shrink */

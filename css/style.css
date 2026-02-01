@@ -144,7 +144,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-logo img {
-    width: 80px; /* smaller on small screens */
+    width: 200px; /* smaller on small screens */
   }
 }
 
