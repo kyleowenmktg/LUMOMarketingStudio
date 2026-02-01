@@ -289,3 +289,88 @@ body {
   font-size: 12px;
   opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    margin-right: 0;   
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-philosophy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about-text p {
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-location {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-text {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-founder {
+    grid-template-columns: 1fr; /* stack */
+    gap: 32px;
+    text-align: center;
+  }
+
+  .about-founder img {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .about-founder p {
+    margin: 0 auto;
+  }
+}

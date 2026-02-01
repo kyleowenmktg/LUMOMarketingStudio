@@ -227,5 +227,31 @@ body::before {
 .fade-up.delay-2 { transition-delay: 0.2s; }
 .fade-up.delay-3 { transition-delay: 0.3s; }
 
+@media (max-width: 768px) {
+  .nav {
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 13px;
+  }
+}
 
 

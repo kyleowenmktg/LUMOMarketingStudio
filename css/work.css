@@ -301,3 +301,41 @@ body {
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .nav {
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .work-image {
+    height: auto;       /* let content decide height */
+    aspect-ratio: 16 / 9; /* keeps it cinematic but flexible */
+  }
+
+  .work-image img {
+    height: 100%;
+    object-fit: contain; /* no cropping */
+  }
+}
