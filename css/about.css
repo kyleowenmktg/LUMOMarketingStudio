@@ -218,12 +218,29 @@ body {
   transition: all 0.3s ease;
   text-decoration: none;
   margin-top: 24px;
+  max-width: 200px;
 }
 
 .cta-button:hover {
   background: #fff;
   color: #000;
 }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;  /* centers the button */
+  max-width: 200px;        /* optional: limits how long the button can get */
+  margin: 0 left;           /* centers wrapper in its parent */
+}
+
+.cta-button {
+  width: 100%;              /* button fills wrapper */
+  text-align: center;       /* center text inside button */
+  padding: 14px 0;          /* adjust padding for smaller width */
+}
+
+
+
 
 .fade-up {
   opacity: 0;
@@ -254,7 +271,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #7298aa;
+  background: #144961;
   padding: 40px;
 }
 

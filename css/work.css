@@ -157,7 +157,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #7298aa;
+  background: #144961;
   padding: 40px;
 }
 
@@ -199,6 +199,23 @@ body {
   align-items: flex-start;
   gap: 60px;
 }
+
+/* Make the image pop on hover */
+.work-image a img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+}
+
+.work-image a:hover img {
+  transform: scale(1.05) translateY(-5px); /* slightly bigger & lifted */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3); /* optional shadow for depth */
+}
+
+
+.work-text .cta-button {
+  margin-top: 30px; /* adds space below paragraph */
+}
+
 
 /* LEFT TEXT */
 .work-text {
