@@ -1,0 +1,108 @@
+/* =========================
+   LEGAL PAGES (Privacy & Terms)
+   ========================= */
+
+/* Page background */
+body.legal-page {
+  background-image: url("/assets/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Main container */
+.legal {
+  max-width: 880px;
+  margin: 120px auto;
+  padding: 0 24px;
+  color: #1f2933;
+  background: rgba(255, 255, 255, 0.96); /* ensures readability */
+  border-radius: 6px;
+}
+
+/* Page title */
+.legal h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+/* Updated / Effective date */
+.legal-updated {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Section headers */
+.legal h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 32px;
+}
+
+/* Paragraphs & lists */
+.legal p,
+.legal li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.legal ul {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.legal li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.legal a {
+  color: #144961;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal a:hover {
+  opacity: 0.8;
+}
+
+/* Footer note (Privacy Policy only, harmless if unused) */
+.legal-footer-note {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 60px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .legal {
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+
+  .legal h2 {
+    margin-top: 36px;
+    padding-top: 24px;
+  }
+}
+
+/* Print-friendly */
+@media print {
+  body.legal-page {
+    background: none;
+  }
+
+  .legal {
+    background: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,70 @@
+/* =========================
+   404 PAGE
+   ========================= */
+
+/* 🔧 BACKGROUND CONFIGURATION */
+body.error-page {
+  min-height: 100vh;
+
+  /* 👉 CHANGE YOUR BACKGROUND HERE */
+  background-image: url("/assets/404.jpg");
+  /* or try: url("/assets/404-bg.jpg") */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.error {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 48px;
+  border-radius: 8px;
+  max-width: 420px;
+}
+
+/* Typography */
+.error h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.error-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.error-text {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 32px;
+}
+
+/* Button */
+.error-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #144961;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.error-btn:hover {
+  background: #0f3a4d;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
