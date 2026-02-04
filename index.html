@@ -55,8 +55,7 @@
 
     <!-- Overlay Content -->
     <div class="hero-tagline">
-  <p>LUMO is a creative marketing studio that helps small and growing businesses 
-    build powerful digital brands. We specialize in website design, branding, SEO, GEO, creative content, and data analysis. 
+  <p>LUMO helps businesses reach their cutomers through strategic digital marketing. 
 
   </p>
     </div>
@@ -68,7 +67,68 @@
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </section>
+<section class="home-bg">
+  <section class="home-intro">
 
+  <!-- SERVICES -->
+  <div class="intro-block">
+    <h2 class="fade-up">LUMO is . . .</h2>
+    <p class="fade-up delay-1">
+      LUMO is a creative marketing studio that helps small and growing businesses 
+    build powerful digital brands. We specialize in website design, branding, SEO, GEO, creative content, and data analysis.
+    Click below to see which each entails.
+    </p>
+
+    <ul class="services-list fade-up delay-2">
+      <li>Website Design & Development</li>
+      <li>SEO & GEO Optimization</li>
+      <li>Content & Data Analysis</li>
+    </ul>
+
+    <a href="services.html" class="cta-button fade-up">Explore Services</a>
+  </div>
+
+  <!-- WORK -->
+  <div class="intro-block alt">
+    <h2 class="fade-up">Our Work</h2>
+    <p class="fade-up delay-1">
+      Visit our works page to 
+      explore our past projects. From developmental schools, to sound production, to restraurants, 
+      no field is out of our reach. </br></br>
+      Our digital marketing expertise allows web development and content creation for any business type. 
+
+    </p>
+
+    <a href="work.html" class="cta-button fade-up">View Selected Work</a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="intro-block fade-up">
+    <h2>About LUMO</h2>
+    <p>
+      Based in Kansas City and Northwest Arkansas, LUMO is a valuable provider because of our Values 
+      and what partnership means to us. Explore What makes LUMO a fair and trustworthy marketing agency
+      who will go above and beyond for your success.
+    </p>
+
+    <a href="about.html" class="cta-button fade-up">About Us</a>
+  </div>
+
+</section>
+
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-up, blur-reveal").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 
  <!-- FOOTER -->
@@ -107,7 +167,7 @@
 
   </div>
 </footer>
-
+</section>
 </body>
 </html>
 

@@ -225,11 +225,10 @@ body {
 
 /* FOOTER */
 .footer {
-  padding: 45px 0 30px;
+  padding: 60px 0 40px;
   width: 100%;
   position: relative;
-  
-  background: rgb(2, 92, 114);
+  background: rgba(255,255,255, 0.08) /* 👈 blends with page */
 }
 
 .footer-content {
@@ -323,3 +322,131 @@ body {
   }
 }
 
+
+/*body section*/
+
+/* HOME INTRO SECTION */
+
+.home-bg {
+  position: relative;
+  background-image: url("../assets/home\ background\ erased.JPEG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.home-intro {
+  position: relative;
+  padding: 140px 8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  overflow: hidden;
+
+}
+
+
+/* BLOCKS */
+.intro-block {
+  max-width: 720px;
+}
+
+.intro-block.alt {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* HEADINGS */
+.intro-block h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+/* PARAGRAPHS */
+.intro-block p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-bottom: 28px;
+}
+
+/* SERVICES LIST */
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.services-list li {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 24px;
+  max-width: 200px;
+}
+
+.cta-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;  /* centers the button */
+  max-width: 200px;        /* optional: limits how long the button can get */
+  margin: 0 left;           /* centers wrapper in its parent */
+}
+
+.cta-button {
+  width: 100%;              /* button fills wrapper */
+  text-align: center;       /* center text inside button */
+  padding: 14px 0;          /* adjust padding for smaller width */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .home-intro {
+    padding: 100px 24px;
+    gap: 100px;
+  }
+
+  .intro-block,
+  .intro-block.alt {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+/* FADE UP ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: stagger helper */
+.fade-delay-1 { transition-delay: 0.2s; }
+.fade-delay-2 { transition-delay: 0.3s; }
+.fade-delay-3 { transition-delay: 0.45s; }
