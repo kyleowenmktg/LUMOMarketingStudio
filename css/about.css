@@ -179,7 +179,7 @@ body {
 }
 
 .about-founder img {
-  width: 100%;
+  width: 65%;
   border-radius: 16px;
 }
 
@@ -442,7 +442,7 @@ body {
   }
 
   .about-founder img {
-    max-width: 420px;
+    max-width: 380px;
     margin: 0 auto;
   }
 

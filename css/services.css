@@ -40,7 +40,7 @@ html, body {
 /* SERVICES BACKGROUND WRAPPER */
 .services-bg {
   position: relative;
-  background-image: url("../assets/Dune\ background2.JPEG");
+  background-image: url("../assets/dune\ background\ 6.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
 
@@ -310,7 +310,7 @@ html, body {
   width: 100%;
   padding: 10vh 50px;
   text-align: center;
-  color: #e5e5e5;
+  color: #ffffff;
 }
 
 
@@ -391,7 +391,7 @@ html, body {
   font-size: 1.2rem;
   line-height: 1.6;
   opacity: 0.9;
-  color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* BUTTON */
