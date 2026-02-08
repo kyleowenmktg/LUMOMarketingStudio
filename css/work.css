@@ -88,6 +88,30 @@ body {
 }
 */
 
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 
 /* WORK PAGE */
 .work-page {
