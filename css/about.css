@@ -96,7 +96,7 @@ body {
 .about-location {
   display: flex;
   gap: 80px;
-  padding: 50px 8vw;
+  padding: 150px 8vw;
   align-items: center;
 }
 
