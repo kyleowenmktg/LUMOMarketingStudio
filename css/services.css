@@ -22,6 +22,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  flex-wrap: nowrap;
 }
 .nav a {
   margin-left: 24px;
@@ -29,6 +30,31 @@ html, body {
   color: #e5e5e5;
   font-size: 14px;
   letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav nav {
+  display: flex;
+  gap: 16px;               /* space between links */
+  flex-shrink: 1;           /* allows links to shrink */
+}
+
+.nav nav a {
+  white-space: nowrap;      /* prevent wrapping */
+  flex-shrink: 1;           /* allow link text to shrink */
+  font-size: 14px;
+}
+
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.logo img {
+  height: 63px; /* adjust to taste */
+  width: auto;
+  display: block;
 }
 
 .logo {

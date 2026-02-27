@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  flex-wrap: nowrap;
 }
 .nav a {
   margin-left: 24px;
@@ -24,11 +25,31 @@
   color: #e5e5e5;
   font-size: 14px;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
+
+.nav nav {
+  display: flex;
+  gap: 16px;               /* space between links */
+  flex-shrink: 1;           /* allows links to shrink */
+}
+
+.nav nav a {
+  white-space: nowrap;      /* prevent wrapping */
+  flex-shrink: 1;           /* allow link text to shrink */
+  font-size: 14px;
+}
+
 
 .logo {
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+.logo img {
+  height: 63px; /* adjust to taste */
+  width: auto;
+  display: block;
 }
 .services-intro {
   min-height: 60vh;
@@ -108,8 +129,13 @@ a::after {
   transition: width 0.3s ease;
 }
 
+
 a:hover::after {
   width: 100%;
+}
+/*IF YOU CHANG ETHE ORDER OF THE CARDS LATER, SWAP THE 2 IN THE () to whatever order its in. */
+.work-card:nth-of-type(2) a::after {
+  display: none;
 }
 
 
@@ -178,6 +204,8 @@ a:hover::after {
   width: auto;
   display: block;
 }
+
+
 
 /* FOOTER */
 .footer {
@@ -297,8 +325,9 @@ a:hover::after {
 .work-side-images {
   display: flex;
   flex-direction: column;
+  
   gap: 24px;
-  max-width: 320px; /* optional constraint */
+  max-width: 400px; /* optional constraint */
 }
 
 .work-side-images img {
