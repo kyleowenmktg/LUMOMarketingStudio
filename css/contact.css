@@ -318,3 +318,72 @@ body::before {
 }
 
 
+
+@media (max-width: 768px) {
+
+  /* Reduce overall padding so we gain horizontal space */
+  .nav {
+    padding: 14px 16px;
+  }
+
+  /* Keep logo pinned left */
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  /* Make nav links behave on small screens */
+  .nav nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    max-width: 65%;
+  }
+
+  .nav nav a {
+    margin-left: 0;          /* override desktop spacing */
+    font-size: 12px;         /* 👈 shrink text */
+    letter-spacing: 0.5px;   /* tighter tracking */
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    padding-left: 8px;   /* was ~16–20px */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* STACK FOOTER */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  /* RESET RIGHT COLUMN ALIGNMENT */
+  .footer-right {
+    align-items: center;
+  }
+
+  /* CENTER LINKS */
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  /* CENTER SOCIALS */
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* TIGHTEN SPACING */
+  .footer {
+    padding: 40px 0 28px;
+  }
+}
