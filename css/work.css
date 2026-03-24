@@ -52,32 +52,7 @@
   width: auto;
   display: block;
 }
-.services-intro {
-  min-height: 60vh;
-  padding: 0 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* center horizontally */
-  text-align: center;  /* center the text */
-}
 
-.services-intro h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 400;   /* normal weight, not bold */
-  margin-bottom: 20px;
-  color: #e5e5e5;
-  padding-top: 140px;
-}
-
-.services-intro p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  line-height: 1.6;
-  opacity: 0.9;
-  font-weight: 400;   /* normal weight */
-  color: #e5e5e5;
-}
 body {
   color: #fff;
 }
@@ -87,7 +62,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("../assets/sky\ background.jpg") center / cover no-repeat;
+  background: url("../assets/dune\ logos/Untitled-3.jpg") center / cover no-repeat;
   z-index: -1;
   filter: brightness(1);
 }
@@ -135,75 +110,173 @@ a:hover::after {
   width: 100%;
 }
 /*IF YOU CHANG ETHE ORDER OF THE CARDS LATER, SWAP THE 2 IN THE () to whatever order its in. */
-.work-card:nth-of-type(2) a::after {
-  display: none;
-}
 
 
-/* WORK PAGE */
-.work-page {
-  padding: 70px 8vw 120px;
+
+/* ===== NEW WORK PAGE STYLES ===== */
+
+/* HERO */
+.work-hero {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  align-items: flex-start;   /* align text to the left */
+  text-align: left;          /* left-align multi-line text */
+  padding: 160px 8vw 80px;   /* same padding as before */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 70px;
 }
 
-/* WORK CARD */
-.work-card {
+.work-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .work-hero h1 {
+    font-size: 6rem;          /* bigger heading on large screens */
+  }
+
+  .work-hero p {
+    font-size: 1.5rem;        /* slightly bigger paragraph */
+  }
+}
+
+@media (min-width: 1600px) {
+  .work-hero {
+    padding-left: 12vw;       /* push text a bit from left edge on ultra-wide */
+    max-width: none;          /* allow container to expand */
+  }
+
+  .work-hero h1 {
+    font-size: 6.5rem;        /* scale even bigger */
+  }
+
+  .work-hero p {
+    font-size: 1.6rem;        /* scale paragraph slightly */
+    max-width: 650px;         /* optional: wider paragraph for ultra-wide screens */
+  }
+}
+
+.work-hero h1 span {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.work-hero p {
+  max-width: 600px;  /* constrain width so it doesn’t stretch too far */
+  font-size: 1.2rem;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Make text always align flush with the image */
+.work-row .work-info {
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
-/* IMAGE RECTANGLE */
-.work-image {
-  width: 100%;
-  height: 80vh;
+.work-row:not(.reverse) .work-info {
+  align-items: flex-start;  /* normal row: text left-aligned next to image */
+  text-align: left;
+}
+
+.work-row.reverse .work-info {
+  align-items: flex-end;    /* reversed row: text right-aligned next to image */
+  text-align: right;
+}
+/* GRID */
+.work-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 0 8vw 120px;
+}
+
+/* ROW */
+.work-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.work-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.work-media {
+  flex: 1;
   overflow: hidden;
 }
 
-.work-image img {
+.work-media img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: clamp(500px, 40vw, 1000px);
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+
+
+/* LARGE SCREENS (big monitors) */
+@media (min-width: 1440px) {
+  .work-media img {
+    max-height: 900px;
+  }
+}
+
+/* ULTRA-WIDE SCREENS */
+@media (min-width: 1800px) {
+  .work-media img {
+    max-height: 900px;
+  }
 }
 
 /* TEXT */
-.work-content h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
-  margin-bottom: 12px;
+.work-info {
+  flex: 1;
 }
 
-.work-content p {
-  max-width: 640px;
+.work-info h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.work-info p {
   font-size: 1.1rem;
   line-height: 1.6;
   opacity: 0.85;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #fff; /* make text white */
+  max-width: 500px;
 }
 
-.logo img.logo-icon {
-  height: 40px; /* adjust to taste */
-  width: auto;
-  margin-right: 10px; /* space between icon and text */
+
+
+/* CTA */
+.work-cta {
+  text-align: center;
+  padding: 100px 8vw;
 }
 
-.logo {
-  font-weight: 500;
-  letter-spacing: 2px;
-}
 
-.logo img {
-  height: 63px; /* adjust to taste */
-  width: auto;
-  display: block;
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .work-row {
+    flex-direction: column;
+  }
+
+  .work-row.reverse {
+    flex-direction: column;
+  }
+
+  .work-grid {
+    gap: 80px;
+  }
 }
 
 
@@ -292,60 +365,19 @@ a:hover::after {
 }
 
 
-/* TEXT + RIGHT IMAGES ROW */
-.work-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 60px;
-}
-
-/* Make the image pop on hover */
-.work-image a img {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  display: block;
-}
-
-.work-image a:hover img {
-  transform: scale(1.05) translateY(-5px); /* slightly bigger & lifted */
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3); /* optional shadow for depth */
-}
-
-
-.work-text .cta-button {
-  margin-top: 30px; /* adds space below paragraph */
-}
-
-
 /* LEFT TEXT */
 .work-text {
   max-width: 640px;
 }
 
-/* RIGHT IMAGES */
-.work-side-images {
-  display: flex;
-  flex-direction: column;
-  
-  gap: 24px;
-  max-width: 400px; /* optional constraint */
-}
-
-.work-side-images img {
-  width: 100%;
-  height: auto;        /* <-- key change */
-  object-fit: contain; /* or remove entirely */
-  display: block;
-}
-.work-content {
-  display: flex;
-  gap: 0px;
-}
 
 /* DEFAULT: stack text normally */
 .work-content:not(:has(.work-side-images)) {
   flex-direction: column;
 }
+
+
+
 
 
 @media (max-width: 900px) {
@@ -369,7 +401,7 @@ a:hover::after {
   text-align: center;
   border: 4px solid rgba(255, 255, 255, 0.3); /* slim white border */
   border-radius: 8px; /* optional: soft rounded corners */
-  margin: -20px 60px 40px 60px; /* optional: spacing from content above/below */
+  margin: -20px 8% 40px 8%; /* optional: spacing from content above/below */
 }
 
 .work-cta h2 {
@@ -407,17 +439,27 @@ a:hover::after {
   color: #000;
 }
 
+a {
+  text-decoration: underline;
+  text-underline-offset: 6px; /* 👈 increase this */
+}
 
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 1.2s ease;
 }
 
 .fade-up.in-view {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Optional: stagger helper */
+.fade-delay-1 { transition-delay: 0.2s; }
+.fade-delay-2 { transition-delay: 0.3s; }
+.fade-delay-3 { transition-delay: 0.45s; }
+
 
 @media (max-width: 768px) {
   .nav {
@@ -526,5 +568,3 @@ a:hover::after {
     padding: 40px 0 28px;
   }
 }
-
-
