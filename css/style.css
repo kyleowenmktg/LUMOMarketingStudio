@@ -161,6 +161,180 @@ body {
 }
 
 
+
+/*GEO SECTION*/
+/* =========================
+   GEO FULL-WIDTH SECTION
+   ========================= */
+
+.geo-band {
+  position: relative;
+  width: 100%;
+  padding: 140px 8vw;
+
+  /* keep it clean but distinct */
+  position: relative;
+  background-image: url("../assets/AFTS/GEO\ background2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* subtle glow accent (very light, not distracting) */
+.geo-band::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(
+    circle,
+    rgba(20, 73, 97, 0.18),
+    transparent 65%
+  );
+  top: -200px;
+  left: -150px;
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.geo-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+}
+
+/* headings */
+.geo-content h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.geo-content h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.geo-content {
+  max-width: 900px;
+  margin-left: 6vw; /* 👈 offset it slightly */
+}
+
+.geo-content h3 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  opacity: 1;
+}
+
+.geo-content {
+  border-left: 2px solid rgba(20, 73, 97, 0.6);
+  padding-left: 28px;
+}
+
+/* paragraphs */
+.geo-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* differentiation line */
+.geo-diff {
+  margin-top: 10px;
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* CTA */
+.geo-cta {
+  margin-top: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .geo-band {
+    padding: 100px 24px;
+  }
+
+  .geo-content {
+    max-width: 100%;
+  }
+}
+
+.h2-lumo {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 400;                /* matches your normal-weight style */
+  color: #ffffff;                    /* soft white for readability */
+             /* space below heading */
+  position: relative;
+  text-align: left;                /* optional: center by default */
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #c6d9dd, #5febcc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;  
+    text-shadow:
+    0 0 8px rgba(255,255,255,0.25),
+    0 0 16px rgba(0,212,255,0.15);
+    
+}
+
+
+@media (max-width: 768px) {
+
+  .geo-band {
+    padding: 90px 20px; /* tighter side padding */
+  }
+
+  .geo-content {
+    max-width: 100%;
+    margin-left: 0; /* remove desktop offset if you added one */
+  }
+
+  /* Main heading */
+  .geo-content h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  /* Question (MOST IMPORTANT LINE) */
+  .geo-content h3 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+
+  /* Body text */
+  .geo-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  /* Keep differentiation readable */
+  .geo-diff {
+    font-size: 1rem;
+  }
+
+  /* CTA button */
+  .geo-cta {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+}
+
+
 /* WORK SECTION */
 /* SECTION STYLING */
 .work {

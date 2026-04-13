@@ -66,7 +66,7 @@ html, body {
 /* SERVICES BACKGROUND WRAPPER */
 .services-bg {
   position: relative;
-  background-image: url("../assets/Gemini_Generated_Image_dnjd89dnjd89dnjd.png");
+  background-image: url("../assets/dune logos/services background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,6 +166,121 @@ html, body {
   display: block;
 }
 
+/*GEO SECTION*/
+
+/* =========================
+   SERVICES GEO PROMO BOX
+   ========================= */
+
+.services-geo-promo {
+  padding: 100px 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.services-geo-box {
+  width: 100%;
+  max-width: 1100px; /* matches GEO card feel */
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  padding: 70px 60px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.services-geo-box h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.services-geo-box p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  max-width: 750px;
+  margin: 0 auto 18px;
+  color: #ffffff;
+}
+
+.services-geo-box .geo-tagline {
+  font-size: 1.2rem;
+  opacity: 1;
+  margin-bottom: 25px;
+}
+
+/* button reuse (uses your existing style but ensures spacing) */
+.services-geo-box .cta-button {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.services-geo-box .cta-button:hover {
+  background: #ffffff;
+  color: #000;
+  transform: translateY(-2px);
+}
+.services-geo-box .cta-button {
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+
+  .services-geo-promo {
+    padding: 60px 0; /* remove side padding entirely */
+  }
+
+  .services-geo-box {
+    max-width: 100%;
+    width: 100%;
+
+    border-radius: 0; /* 👈 remove card look */
+    padding: 50px 22px; /* tighter but still breathable */
+
+    box-shadow: none; /* cleaner mobile look */
+  }
+
+  /* Heading */
+  .services-geo-box h1 {
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+  }
+
+  /* Paragraphs */
+  .services-geo-box p {
+    font-size: 1rem;
+    line-height: 1.7;
+
+    max-width: 100%; /* 👈 KEY FIX */
+    margin: 0 0 16px; /* remove auto centering */
+  }
+
+  /* Tagline */
+  .services-geo-box .geo-tagline {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  /* Button */
+  .services-geo-box .cta-button {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+}
+
 /* FOOTER */
 .footer {
   padding: 60px 0 40px;
@@ -182,7 +297,6 @@ html, body {
   align-items: flex-start;
   color: #ffffff; /* matches brand but softer */
 }
-
 /* LEFT */
 .footer-left {
   display: flex;
