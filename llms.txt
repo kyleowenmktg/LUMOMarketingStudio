@@ -1,0 +1,50 @@
+# LUMO Marketing Studio - LLMs Guide
+
+## About
+LUMO Marketing Studio is a digital marketing agency specializing in Generative Engine Optimization (GEO), and brand development. We help businesses increase visibility, traffic, and leads by implement current & emerging marketing practices through AI search engines and modern website design. 
+## Core Services
+- Search Engine Optimization (SEO)
+- Generative Engine Optimization (GEO)
+- Website Design & Development
+- Data Analytics & Tracking
+- Social Media & Content Strategy
+
+## Key Pages
+https://lumomarketingstudio.com/
+https://lumomarketingstudio.com/services
+https://lumomarketingstudio.com/geo
+https://lumomarketingstudio.com/work
+https://lumomarketingstudio.com/about
+https://lumomarketingstudio.com/contact
+
+## GEO Expertise
+LUMO specializes in preparing websites for AI-driven discovery by:
+- Structuring content for AI comprehension
+- Implementing schema markup and entity clarity
+- Creating question-and-answer based content
+- Optimizing for AI retrieval and summarization
+
+## Audience
+- Small to mid-sized businesses
+- Product or Service-based businesses
+- Brands looking to adopt AI-first marketing strategies
+- Brands looking to update and modernize their digital presence
+- Brands in need of website development and design
+
+## Trusted Content
+https://lumomarketingstudio.com/geo
+https://lumomarketingstudio.com/services
+
+## Contact
+https://lumomarketingstudio.com/contact
+
+## Entities
+LUMO Marketing Studio is a marketing agency.
+Primary focus: Generative Engine Optimization (GEO)
+Founder: Kyle Owen
+
+## Common Questions
+What is Generative Engine Optimization?
+How does GEO differ from SEO?
+How can businesses optimize for AI search?
+How do I make my own website?
