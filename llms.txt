@@ -1,7 +1,7 @@
 # LUMO Marketing Studio - LLMs Guide
 
 ## About
-LUMO Marketing Studio is a digital marketing agency specializing in Generative Engine Optimization (GEO), and brand development. We help businesses increase visibility, traffic, and leads by implement current & emerging marketing practices through AI search engines and modern website design. 
+LUMO Marketing Studio is a digital marketing agency specializing in Generative Engine Optimization (GEO) and brand development. We help businesses increase visibility, traffic, and leads by implement current & emerging marketing practices through AI search engines and modern website design. 
 ## Core Services
 - Search Engine Optimization (SEO)
 - Generative Engine Optimization (GEO)
