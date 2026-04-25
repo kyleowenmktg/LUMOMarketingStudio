@@ -65,6 +65,7 @@ html, body {
 /*attempting background*/
 /* SERVICES BACKGROUND WRAPPER */
 .services-bg {
+  background-color: #0a0a0a;
   position: relative;
   background-image: url("../assets/dune logos/services background.png");
   background-size: cover;
