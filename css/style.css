@@ -704,3 +704,81 @@ body {
     padding: 40px 0 28px;
   }
 }
+
+
+/* Client Showcase*/ 
+/* =========================
+   CLIENT SHOWCASE SECTION
+   ========================= */
+
+.client-showcase {
+  padding: 120px 8vw;
+  background: #000;
+  background-image: url("../assets/AFTS/video\ background\ sample.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.showcase-header {
+  margin-bottom: 60px;
+  max-width: 900px;
+    text-align: center;      /* 👈 centers text */
+  margin-left: auto;       /* 👈 centers the whole block */
+  margin-right: auto;
+}
+
+.showcase-header h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.showcase-header p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* GRID */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 2 videos */
+  gap: 40px;
+}
+
+/* ITEM */
+.showcase-item {
+  width: 100%;
+}
+
+/* BROWSER FRAME */
+.browser-frame {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  transition: transform 0.4s ease;
+   aspect-ratio: 16 / 7; /* 👈 controls height */
+}
+
+.browser-frame:hover {
+  transform: translateY(-6px);
+}
+
+/* TOP BAR */
+
+
+/* VIDEO */
+.browser-frame video {
+  width: 100%;
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+}

@@ -135,6 +135,41 @@
 Explore our work with clients across the digital landscape. From building websites and crafting strategic designs to creating compelling graphics.  </p>
 </section>
 
+  <!-- CLIENT SHOWCASE -->
+<section class="client-showcase">
+
+  <div class="showcase-header fade-up">
+    <h2>Modern Websites Built to Create Leads</h2>
+    <p>View some of our past projects here</p>
+  </div>
+
+  <div class="showcase-grid">
+
+    <!-- VIDEO 1 -->
+ <a href="https://www.autismfromthestart.com/" target="_blank" rel="noopener noreferrer" class="showcase-item fade-up">
+  <div class="browser-frame">
+    <div class="browser-bar"></div>
+    <video class="hover-video" muted loop playsinline>
+      <source src="assets/AFTS/AFTS website.mp4" type="video/mp4">
+    </video>
+  </div>
+</a>
+
+    <!-- VIDEO 2 -->
+<a href="https://www.virtueproduction.com/" target="_blank" rel="noopener noreferrer" class="showcase-item fade-up">
+  <div class="browser-frame">
+    <div class="browser-bar"></div>
+    <video class="hover-video" muted loop playsinline>
+      <source src="assets/AFTS/Virtue Production.mp4" type="video/mp4">
+    </video>
+  </div>
+</a>
+
+  </div>
+
+</section>
+
+
 <section class="work-grid">
 
   <!-- PROJECT 1 -->
@@ -253,5 +288,37 @@ Explore our work with clients across the digital landscape. From building websit
       observer.observe(el);
     });
   </script>
+  <script>
+  const videos = document.querySelectorAll('.hover-video');
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    videos.forEach(video => observer.observe(video));
+  } else {
+    videos.forEach(video => {
+      video.pause();
+
+      video.parentElement.addEventListener('mouseenter', () => {
+        video.play();
+      });
+
+      video.parentElement.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  }
+</script>
 </body>
 </html>

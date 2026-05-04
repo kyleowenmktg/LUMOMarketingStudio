@@ -203,7 +203,8 @@ body {
 }
 
 .about-cta h2 {
-     font-size: clamp(0.5rem, 2vw, 1.5rem);
+ 
+  line-height: 1.3;
   font-weight: 400;
   margin-bottom: 24px;
 }
@@ -518,4 +519,35 @@ body {
   .footer {
     padding: 40px 0 28px;
   }
+}
+
+/*Mobile text smaller*/
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 1.8rem; /* was scaling too big */
+  }
+
+  .about-text p {
+    font-size: 1rem;   /* 👈 key fix */
+    line-height: 1.6;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .location-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .location-text p {
+    font-size: 1rem;
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  width: auto;        /* 👈 key */
+  max-width: none;    /* 👈 remove constraint */
 }
