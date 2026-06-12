@@ -54,83 +54,88 @@
   "@graph": [
 
     {
-      "@type": "Organization",
-      "name": "LUMO Marketing Studio",
-      "url": "https://lumomarketingstudio.com/",
-      "logo": "https://lumomarketingstudio.com/assets/dune%20logos/dune-logo-5.png",
-      "description": "LUMO Marketing Studio is a digital marketing agency specializing in SEO and Generative Engine Optimization (GEO), helping businesses improve visibility across search engines and AI-driven platforms.",
-      "email": "lumomarketingstudio@gmail.com",
-      "sameAs": [
-        "https://www.instagram.com/lumo_marketingstudio",
-        "https://twitter.com/lumo_marketing",
-        "https://www.linkedin.com/company/lumo-marketing-studio/"
-      ]
-    },
-
-    {
       "@type": "WebPage",
-      "name": "LUMO Services",
-      "url": "https://lumomarketingstudio.com/services.html",
-      "description": "Digital marketing services including web design, SEO, GEO, analytics, and branding.",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
+      "@id": "https://www.lumomarketingstudio.com/services.html",
+      "url": "https://www.lumomarketingstudio.com/services.html",
+      "name": "Digital Marketing Services | LUMO Marketing Studio",
+      "description": "Explore LUMO Marketing Studio's digital marketing services including Generative Engine Optimization (GEO), SEO, website design, branding, analytics, social media management, and content strategy.",
+      "isPartOf": {
+        "@id": "https://www.lumomarketingstudio.com/#website"
+      },
+      "about": {
+        "@id": "https://www.lumomarketingstudio.com/#organization"
       }
     },
 
     {
-      "@type": "Service",
-      "name": "Web Design & Development",
-      "provider": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
-      },
-      "description": "Custom website design and development focused on UX, branding, and conversion optimization.",
-      "serviceType": "Website Development"
+      "@type": "Organization",
+      "@id": "https://www.lumomarketingstudio.com/#organization",
+      "name": "LUMO Marketing Studio",
+      "url": "https://www.lumomarketingstudio.com",
+      "logo": "https://www.lumomarketingstudio.com/assets/LUMO-V4-(bigger-O).png",
+      "description": "LUMO Marketing Studio is a digital marketing agency specializing in Generative Engine Optimization (GEO), SEO, website design, branding, analytics, and content strategy.",
+      "email": "lumomarketingstudio@gmail.com",
+      "areaServed": "United States",
+      "sameAs": [
+        "https://www.linkedin.com/company/lumo-marketing-studio/",
+        "https://www.instagram.com/lumo_marketingstudio",
+        "https://twitter.com/lumo_marketing"
+      ]
     },
 
     {
       "@type": "Service",
-      "name": "Search Engine Optimization (SEO)",
-      "provider": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
-      },
-      "description": "SEO services including keyword optimization, backlinks, metadata, and ranking improvements.",
-      "serviceType": "SEO"
-    },
-
-    {
-      "@type": "Service",
+      "@id": "https://www.lumomarketingstudio.com/services.html#geo",
       "name": "Generative Engine Optimization (GEO)",
       "provider": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
+        "@id": "https://www.lumomarketingstudio.com/#organization"
       },
-      "description": "Optimization for AI-driven search engines and generative systems to improve brand visibility in AI responses.",
-      "serviceType": "GEO"
+      "serviceType": "Generative Engine Optimization",
+      "description": "Optimization of websites and digital content for AI search engines and large language models including ChatGPT, Google AI, Gemini, and Perplexity."
     },
 
     {
       "@type": "Service",
-      "name": "Analytics & Strategy",
+      "@id": "https://www.lumomarketingstudio.com/services.html#seo",
+      "name": "Search Engine Optimization",
       "provider": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
+        "@id": "https://www.lumomarketingstudio.com/#organization"
       },
-      "description": "Data-driven marketing strategy including analytics, KPI tracking, conversion funnels, and campaign optimization.",
-      "serviceType": "Marketing Strategy"
+      "serviceType": "SEO",
+      "description": "Technical SEO, keyword research, content optimization, blog strategy, metadata optimization, and search visibility improvements."
     },
 
     {
       "@type": "Service",
+      "@id": "https://www.lumomarketingstudio.com/services.html#webdesign",
+      "name": "Website Design & Development",
+      "provider": {
+        "@id": "https://www.lumomarketingstudio.com/#organization"
+      },
+      "serviceType": "Website Design",
+      "description": "Modern website design and development focused on branding, user experience, conversion optimization, and AI-friendly structure."
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://www.lumomarketingstudio.com/services.html#analytics",
+      "name": "Marketing Analytics & Strategy",
+      "provider": {
+        "@id": "https://www.lumomarketingstudio.com/#organization"
+      },
+      "serviceType": "Marketing Analytics",
+      "description": "Marketing strategy, campaign analysis, KPI tracking, conversion optimization, customer research, and business growth consulting."
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://www.lumomarketingstudio.com/services.html#branding",
       "name": "Branding & Digital Marketing",
       "provider": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
+        "@id": "https://www.lumomarketingstudio.com/#organization"
       },
-      "description": "Brand development, social media management, email marketing, CRM systems, and creative digital marketing services.",
-      "serviceType": "Digital Marketing"
+      "serviceType": "Brand Development",
+      "description": "Brand strategy, logo design, graphic design, social media management, LinkedIn management, CRM strategy, and email marketing services."
     }
 
   ]
@@ -152,6 +157,7 @@
   </a>
 
   <nav>
+    <a href="GEO.html">GEO</a>
     <a href="services.html">Services</a>
     <a href="work.html">Work</a>
     <a href="about.html">About</a>
@@ -166,9 +172,11 @@
   <section class="services-intro">
     <h1 class="blur-reveal">Our Services</h1>
     <p class="blur-reveal delay-2">
-    Our goal is to capture potential leads your business is missing out on online.</br></br>
-    LUMO covers the full picture from building your website with intentions of clarity and converting leads, getting
-    found in search, and understanding the data behind every decision.
+    Our goal is to act as a marketing director for your company. We will optimize and create all digital marketing 
+    avenues for your business.</br></br>
+
+    LUMO covers the full picture from optimizing your website for proper and modern GEO/SEO techniques, to producing 
+    digital content in the form of blogs and social media that build your brand's authority online. 
     
     </p>
     <h2 class="h2-lumo blur-reveal delay-3">Superior content design focused on engagement and results. </h2>
@@ -262,18 +270,16 @@
 <section class="services-geo-promo blur-reveal">
   <div class="services-geo-box">
 
-    <h1 class="blur-reveal delay-1">New GEO Services</h1>
+    <h1 class="blur-reveal delay-1">Marketing Pricing Tiers</h1>
 
     <p class="geo-tagline blur-reveal delay-1">
-      We are offering Generative Engine Optimization services you won't find elsewhere.
+      We are offering multiple monthly tiers based on your company's specific needs. 
     </p>
 
     <p class="blur-reveal delay-1">
-      SEO is no longer the full picture. Showing up in search engines is just as important as showing up anywhere else.
-    </p>
+        Visit our GEO page to learn more about our packages and what you can benifit from.  </p>
 
     <p class="blur-reveal delay-1">
-      Learn about how we can build upon traditional SEO and evolve your business to show up in AI search engines. Visit our GEO services page!
     </p>
 
     <a href="geo.html" class="cta-button blur-reveal delay-1">GEO Services</a>

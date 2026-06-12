@@ -91,46 +91,51 @@ body {
 /* =========================
    HERO (MATCH YOUR SYSTEM)
    ========================= */
-.geo-hero {
-  min-height: 45vh;
-  padding: 90px 8vw 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* center horizontally */
-  text-align: center;  /* center the text */
+.geo-hero{
+    min-height:65vh;
+    padding:140px 8vw 110px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    gap:18px; /* key fix: consistent vertical rhythm */
 }
 
-.geo-hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 400;
-  margin-bottom: 24px;
-  color: #e5e5e5;
+
+
+/* Headline */
+.geo-hero h1{
+    font-size:clamp(3.5rem,8vw,6.5rem);
+    line-height:.9;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:-2px;
+    color:rgba(255,255,255,.35);
+    margin:0; /* reset so gap controls spacing */
 }
 
-.geo-hero h2 {
-  font-size: 1.2rem;
-  max-width: 700px;
-  line-height: 1.6;
-  opacity: 0.9;
-  font-weight: 400;
-  margin: 0 auto 40px;   /* 👈 THIS centers the block */
-  text-align: center; 
-  
-}
-/* ADD THIS */
-.geo-hero h2 {
-  width: 100%;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+/* Gradient text */
+.geo-hero h1 span{
+    background:linear-gradient(90deg,#ffffff,#5febcc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 }
 
-.hero-cta-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
+/* Subtitle */
+.geo-subtitle{
+    max-width:720px;
+    font-size:1.15rem;
+    line-height:1.8;
+    opacity:.82;
+    margin-top: 24px;
+}
+
+/* CTA */
+.geo-hero .cta-button{
+    margin-top:10px; /* slight push for hierarchy */
 }
 
 
@@ -139,7 +144,7 @@ body {
    (ORIGINAL STYLE — GLASS)
    ========================= */
 .geo-card-section {
-  padding: 80px 8vw;
+  padding: 0px 8vw 80px;
 }
 
 .geo-card-box {
@@ -149,7 +154,6 @@ body {
   padding: 60px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.6);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  margin-bottom: 100px;
 }
 
 
@@ -166,11 +170,18 @@ body {
 }
 
 /* IMAGE */
-.geo-image1  {
-  flex: 1;
-  height: 420px;
-  background: url("../assets/AFTS/What\ is\ GEO\ picture.png") center / cover no-repeat;
-  border-radius: 8px;
+.geo-image1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geo-image1 img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    display: block;
 }
 
 .geo-image2  {
@@ -185,11 +196,8 @@ body {
   flex: 1;
 }
 
-.geo-text h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 20px;
-  font-weight: 400;
-}
+
+
 
 .geo-text p {
   font-size: 1.05rem;
@@ -760,4 +768,539 @@ body {
   .nav {
     padding-left: 8px;   /* was ~16–20px */
   }
+}
+
+/* HOW GEO WORKS */
+
+.geo-steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:28px;
+margin-top:70px;
+}
+
+.geo-step{
+padding:34px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+border-radius:14px;
+backdrop-filter:blur(12px);
+transition:.3s;
+}
+
+.geo-step:hover{
+transform:translateY(-6px);
+border-color:rgba(95,235,204,.25);
+}
+
+.step-number{
+font-size:2rem;
+font-weight:700;
+color:#5febcc;
+margin-bottom:20px;
+}
+
+.geo-step h3{
+margin-bottom:18px;
+}
+
+.geo-step p{
+opacity:.75;
+line-height:1.8;
+}
+
+/* GEO VS SEO */
+
+.comparison-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:36px;
+margin-top:70px;
+}
+
+.comparison-column{
+padding:45px;
+border-radius:14px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.comparison-column.active{
+background:linear-gradient(rgba(20,73,97,.18),rgba(20,73,97,.08));
+border-color:rgba(95,235,204,.25);
+}
+
+.comparison-column ul{
+list-style:none;
+margin-top:28px;
+}
+
+.comparison-column li{
+padding:16px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+opacity:.85;
+}
+
+/* WHO BENEFITS */
+
+.business-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+margin-top:70px;
+}
+
+.business-card{
+padding:40px;
+border-radius:14px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.business-card:hover{
+transform:translateY(-6px);
+border-color:rgba(95,235,204,.25);
+}
+
+.business-card h3{
+margin-bottom:18px;
+color:#8edfcd;
+}
+
+.business-card p{
+opacity:.75;
+line-height:1.8;
+}
+
+@media(max-width:900px){
+
+.geo-steps{
+grid-template-columns:1fr;
+}
+
+.comparison-grid{
+grid-template-columns:1fr;
+}
+
+.business-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+.geo-explainer {
+    margin-top: 140px;
+    width: 100%;
+}
+
+
+
+.geo-explainer h2 {
+    font-size: clamp(3rem,8vw,6rem);
+    line-height: .92;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.38);
+    margin-bottom: 34px;
+}
+
+.geo-explainer h2 span{
+    background:linear-gradient(
+        90deg,
+        #c6d9dd,
+        #5febcc
+    );
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.geo-intro{
+    max-width:780px;
+    font-size:1.1rem;
+    line-height:1.9;
+    opacity:.82;
+    margin-bottom:60px;
+}
+
+.geo-card{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:14px;
+    padding:42px;
+    transition:.35s ease;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+}
+
+.geo-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(95,235,204,.25);
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.55),
+        0 0 30px rgba(95,235,204,.08);
+
+}
+
+.geo-card h3{
+    font-size:1.35rem;
+    color:#94daca;
+    margin-bottom:22px;
+    text-transform:uppercase;
+}
+
+.geo-card p{
+    line-height:1.9;
+    opacity:.82;
+}
+
+.geo-page{
+    padding:0px 8vw 140px;
+    position:relative;
+    overflow:hidden;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.geo-page h1 {
+    color: #d6e4e1;
+    margin-bottom: 18px;
+}
+
+.geo-page h2 {
+    font-size: clamp(3rem,8vw,6rem);
+    line-height: .92;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.38);
+    margin-bottom: 34px;
+}
+
+.geo-page h2 span{
+    background:linear-gradient(
+        90deg,
+        #c6d9dd,
+        #5febcc
+    );
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.geo-intro{
+    max-width:780px;
+    font-size:1.1rem;
+    line-height:1.9;
+    opacity:.82;
+    margin-bottom:60px;
+}
+
+/* =========================
+   SERVICES
+   ========================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.service-card{
+    padding:40px;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(95,235,204,.25);
+}
+
+.service-icon{
+    font-size:2rem;
+    color:#5febcc;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:18px;
+    font-size:1.35rem;
+}
+
+.service-card p{
+    opacity:.8;
+    line-height:1.8;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing-card.featured{
+        transform:none;
+    }
+
+}
+
+
+/* =========================
+   PRICING GRID
+========================= */
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:70px;
+}
+
+.pricing-card{
+    position:relative;
+    padding:42px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    transition:.35s ease;
+}
+
+.pricing-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+}
+
+.pricing-card.featured{
+    border:1px solid rgba(95,235,204,.35);
+    background:
+        linear-gradient(
+            rgba(20,73,97,.18),
+            rgba(20,73,97,.08)
+        );
+
+    box-shadow:
+        0 0 30px rgba(95,235,204,.08),
+        0 20px 60px rgba(0,0,0,.45);
+}
+
+.popular-tag{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:6px 14px;
+    background:#5febcc;
+    color:#000;
+    border-radius:30px;
+    font-size:.75rem;
+    font-weight:600;
+}
+
+.plan-type{
+
+    display:block;
+    letter-spacing:3px;
+    font-size:.75rem;
+    opacity:.65;
+    margin-bottom:12px;
+}
+
+.pricing-card h3{
+    font-size:2rem;
+    margin-bottom:28px;
+}
+
+.price{
+    font-size:3.3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.price span{
+    font-size:1rem;
+    opacity:.7;
+}
+
+.plan-desc{
+    opacity:.75;
+    line-height:1.7;
+    margin-bottom:28px;
+}
+
+.pricing-card ul{
+    list-style:none;
+    margin:30px 0;
+    padding:0;
+}
+
+.pricing-card li{
+    margin-bottom:16px;
+    line-height:1.6;
+    opacity:.85;
+}
+
+.pricing-btn{
+    display:block;
+    text-align:center;
+    padding:14px;
+    border:1px solid rgba(95,235,204,.25);
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    margin-top:36px;
+    transition:.3s;
+}
+
+.pricing-btn:hover{
+    background:#5febcc;
+    color:#000;
+}
+
+@media(max-width:900px){
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+
+}
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.service-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:38px;
+    transition:.35s ease;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+.service-card:hover{
+
+    transform:translateY(-6px);
+    border-color:rgba(95,235,204,.25);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(95,235,204,.08);
+}
+
+.service-icon{
+
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:rgba(20,73,97,.25);
+    border:1px solid rgba(95,235,204,.25);
+    color:#5febcc;
+    font-size:20px;
+    margin-bottom:28px;
+}
+
+.service-card h3{
+    font-size:1.25rem;
+    font-weight:600;
+    margin-bottom:18px;
+    color:#ffffff;
+}
+
+.service-card p{
+    font-size:1rem;
+    line-height:1.8;
+    opacity:.75;
+}
+
+@media(max-width:900px){
+.services-grid{
+    grid-template-columns:1fr 1fr;
+}
+}
+@media(max-width:768px){
+.services-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media (max-width:768px){
+
+    .geo-pill-container{
+        justify-content:center;
+        gap:10px;
+    }
+
+    .geo-pill{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+        padding:12px 16px;
+        font-size:.9rem;
+    }
+
+}
+
+.geo-pill-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
+}
+
+.geo-pill{
+    padding:10px 18px;
+    border-radius:30px;
+
+    background:rgba(20,73,97,.25);
+    border:1px solid rgba(95,235,204,.25);
+
+    color:#5febcc;
+    font-size:.9rem;
+    font-weight:500;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    transition:.3s ease;
+}
+
+.geo-pill:hover{
+    transform:translateY(-2px);
+    border-color:rgba(95,235,204,.45);
+    box-shadow:0 0 18px rgba(95,235,204,.12);
+}
+
+.geo-card-title {
+    font-size: clamp(2rem,6vw,4rem);
+    line-height: .92;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(236, 248, 245);
+    margin-bottom: 34px;
+
 }

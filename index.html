@@ -55,53 +55,206 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Schema Markup-->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+{
+  "@context": "https://schema.org",
+  "@graph": [
 
-      {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio",
-        "url": "https://lumomarketingstudio.com/",
-        "logo": "https://lumomarketingstudio.com/assets/LUMO-V4-(bigger-O).png",
-        "description": "LUMO Marketing Studio is a digital marketing agency specializing in SEO and Generative Engine Optimization (GEO), helping businesses improve visibility across search engines and AI platforms.",
-        "email": "lumomarketingstudio@gmail.com",
-        "sameAs": [
-          "https://www.instagram.com/lumo_marketingstudio",
-          "https://twitter.com/lumo_marketing",
-          "https://www.linkedin.com/company/lumo-marketing-studio/"
-        ]
+    {
+      "@type": "Organization",
+      "@id": "https://lumomarketingstudio.com/#organization",
+      "name": "LUMO Marketing Studio",
+      "url": "https://lumomarketingstudio.com/",
+      "logo": {
+        "@id": "https://lumomarketingstudio.com/#logo"
       },
-
-      {
-        "@type": "WebSite",
-        "url": "https://lumomarketingstudio.com/",
-        "name": "LUMO Marketing Studio",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://lumomarketingstudio.com/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
+      "image": {
+        "@id": "https://lumomarketingstudio.com/#logo"
+      },
+      "description": "LUMO Marketing Studio is a full-service digital marketing agency specializing in Generative Engine Optimization (GEO), SEO, website design, branding, content strategy, analytics, and AI search visibility.",
+      "email": "lumomarketingstudio@gmail.com",
+      "location": {
+        "@type": "Place",
+        "name": "Kansas City, Missouri",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kansas City",
+          "addressRegion": "MO",
+          "addressCountry": "US"
         }
       },
-
-      {
-        "@type": "Service",
-        "name": "Generative Engine Optimization (GEO)",
-        "provider": {
-          "@type": "Organization",
-          "name": "LUMO Marketing Studio"
-        },
-        "description": "Optimization of websites and content to improve visibility in AI-driven search engines and generative platforms.",
-        "areaServed": {
-          "@type": "Place",
-          "name": "United States"
-        }
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/lumo-marketing-studio/",
+        "https://www.instagram.com/lumo_marketingstudio",
+        "https://twitter.com/lumo_marketing"
+      ],
+      "hasOfferCatalog": {
+        "@id": "https://lumomarketingstudio.com/#services"
       }
+    },
 
-    ]
-  }
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://lumomarketingstudio.com/#business",
+      "name": "LUMO Marketing Studio",
+      "url": "https://lumomarketingstudio.com/",
+      "image": {
+        "@id": "https://lumomarketingstudio.com/#logo"
+      },
+      "description": "Digital marketing agency specializing in website design, SEO, Generative Engine Optimization (GEO), branding, analytics, and AI search visibility.",
+      "email": "lumomarketingstudio@gmail.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kansas City",
+        "addressRegion": "MO",
+        "postalCode": "64108",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "Search Engine Optimization",
+        "Website Design",
+        "Website Development",
+        "Brand Strategy",
+        "Digital Marketing",
+        "AI Search Optimization",
+        "Content Marketing",
+        "Analytics"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://lumomarketingstudio.com/#website",
+      "url": "https://lumomarketingstudio.com/",
+      "name": "LUMO Marketing Studio",
+      "publisher": {
+        "@id": "https://lumomarketingstudio.com/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://lumomarketingstudio.com/#homepage",
+      "url": "https://lumomarketingstudio.com/",
+      "name": "LUMO Marketing Studio | AI Search & Digital Marketing Agency",
+      "description": "LUMO Marketing Studio helps businesses grow through website design, SEO, Generative Engine Optimization (GEO), branding, and AI search optimization.",
+      "isPartOf": {
+        "@id": "https://lumomarketingstudio.com/#website"
+      },
+      "about": {
+        "@id": "https://lumomarketingstudio.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://lumomarketingstudio.com/#logo"
+      }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://lumomarketingstudio.com/#logo",
+      "contentUrl": "https://lumomarketingstudio.com/assets/LUMO-V4-(bigger-O).png",
+      "caption": "LUMO Marketing Studio Logo"
+    },
+
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://lumomarketingstudio.com/#services",
+      "name": "Digital Marketing Services",
+      "itemListElement": [
+
+        {
+          "@type": "Service",
+          "name": "Generative Engine Optimization",
+          "serviceType": "AI Search Optimization",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Search Engine Optimization",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Website Design",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Website Development",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Brand Strategy",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Social Media Marketing",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Email Marketing",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Analytics & Reporting",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
+        {
+          "@type": "Service",
+          "name": "Content Strategy",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        }
+
+      ]
+    }
+
+  ]
+}
   </script>
-
+<meta property="og:title" content="LUMO Marketing Studio">
+<meta property="og:description" content="Strategic websites, SEO, GEO, branding, and analytics for modern businesses.">
+<meta property="og:image" content="https://www.lumomarketingstudio.com/assets/social-preview.jpg">
+<meta property="og:url" content="https://www.lumomarketingstudio.com">
+<meta property="og:type" content="website">
 
 </head>
 
@@ -113,6 +266,7 @@
     <img src="assets/dune logos/dune-logo-5.png" alt="LUMO logo">
     </a>
     <nav>
+      <a href="GEO.html">GEO</a>
       <a href="services.html">Services</a>
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
@@ -136,7 +290,8 @@
 
     <!-- Overlay Content -->
     <div class="hero-tagline">
-  <p> LUMO helps businesses capture missing customers online through strategic marketing, emerging tools, innovative technologies, and modern practices.
+  <p> LUMO is a full service marketing agency built for the era of AI search. We optimize your digital 
+    presence so that your brand is visible everywhere, to people and systems. 
 
   </p>
     </div>
@@ -149,12 +304,347 @@
     </div>
   </section>
 
+ <!-- 
+<section class="welcome-lumo">
+
+    <div class="welcome-bg">
+        LUMO
+    </div>
+
+    <div class="welcome-content fade-up">
+
+        <p class="welcome-statement">
+            LUMO is a modern marketing studio that combines branding,
+            website design, SEO, Generative Engine Optimization,
+            content strategy, and analytics into one unified system
+            built to make businesses impossible to ignore online.
+        </p>
+
+    </div>
+
+</section>
+-->
+  <!-- GEO SECTION -->
+<section class="geo-band">
+  <div class="geo-content fade-up">
+    <div class="ai-tag fade-up fade-delay-1">
+      AI SEARCH OPTIMIZATION
+    </div>
+    <h2 class= "fade-up delay-1">YOUR COMPETITORS ARE IN
+      <span>AI ANSWERS.</span>
+      YOU'RE NOT.</h2>
+
+    <h3 class="h2-lumo fade-up fade-delay-1">
+      How does your business perform when someone asks AI tools for your product or service?
+    </h3>
+
+    <p class="fade-up fade-delay-1">
+      When a buyer asks ChatGPT, Perplexity, or Google AI who to hire for your service, 
+      AI generates an answer and recommends specific businesses by name. 
+      Generative Engine Optimization (GEO) is the process of making sure your business is one 
+      of them. That's what LUMO does.  </p>
+
+    <p class="fade-up fade-delay-1">
+     <!-- LUMO structures your brand’s content so AI tools can confidently understand and recommend your products or services.-->
+    </p>
+
+    <p class="geo-diff fade-up fade-delay-2">
+       <a href="GEO.html" data-track-id="GEO-homepage-button" class="cta-button geo-cta">
+      GEO Services
+    </a>
+    </p>
+    <!--<p class="fade-up fade-delay-1"></br>We stay ahead of the game so your business doesn't fall behind.</p>-->
+  </div>
+
+<!-- WHAT IS GEO -->
+<!--<div class="geo-explainer fade-up">
+
+ <h1> What is GEO?</h1>
+
+    <h2>
+        SEARCH CHANGED.
+        <span>MOST AGENCIES DIDN'T.</span>
+    </h2>
+
+    <p class="geo-intro">
+        Traditional SEO gets you ranked on Google's blue links.
+        Generative Engine Optimization (GEO) gets your business cited
+        when AI systems write the answer.
+    </p>
+
+    <div class="geo-mini-grid">
+
+        <div class="geo-mini-card">
+
+            <h3>OLD SEO</h3>
+
+            <p>
+                Someone searches Google. They see ten blue links.
+                If you're on page one, they might click your website.
+                If not, you're invisible.
+            </p>
+
+        </div>
+
+        <div class="geo-mini-card">
+
+            <h3>AI SEARCH</h3>
+
+            <p>
+                Someone asks ChatGPT or Google AI who to hire.
+                AI generates an answer and recommends specific businesses.
+                LUMO helps make sure your business is one of them.
+            </p>
+
+        </div>
+
+    </div>
+    <p><br><br>GEO works alongside traditional SEO — it doesn't replace it. We do both.</p>
+
+</div> -->
+
+<!-- services -->
+  <div class="geo-explainer fade-up">
+
+  <h1> What Services Does LUMO Offer?</h1>
+
+      <h2>
+          EVERYTHING YOU NEED, TO GET
+          <span>FOUND.</span>
+      </h2>
+
+      <p class="geo-intro">
+        LUMO is a GEO centered marketing agency that offers a full range of digital marketing services 
+        from your website to social media, all based on analytical strategy. 
+        We help businesses show up everywhere online.
+
+      </p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <h3>GEO / AI Search</h3>
+
+        <p>
+            Get cited in ChatGPT, Perplexity, and Google AI when buyers
+            research your category.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <h3>SEO & Content</h3>
+
+        <p>
+            Keyword strategy and content that ranks on Google while feeding
+            AI systems the information they trust.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+
+        <h3>Website Design</h3>
+
+        <p>
+            Fast, modern websites structured for human conversions while 
+            optimized for search.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+
+        <h3>Social Media</h3>
+
+        <p>
+            Consistent content that strengthens your authority across every
+            platform.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+        </div>
+
+        <h3>Brand Strategy</h3>
+
+        <p>
+            Positioning and messaging that makes your business memorable and
+            easy for systems to understand.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fa-solid fa-chart-column"></i>
+        </div>
+
+        <h3>Reporting</h3>
+
+        <p>
+            Monthly visibility tracking so you can see where your business
+            appears across traditional and AI search.
+        </p>
+    </div>
+
+</div>
+<!--Pricing-->
+<div class="geo-explainer fade-up">
+
+ <h1> Pricing</h1>
+
+    <h2>
+        SIMPLE PLANS. <span>BIG IMPACT </span>
+    </h2>
+
+    <p class="geo-intro">
+      We offer 3 digital marketing tiers built around where your business 
+      is right now. All plans include a 3-month minimum commitment.
+    </p>
+<div class="pricing-grid">
+
+    <div class="pricing-card">
+
+        <span class="plan-type">STARTER</span>
+
+        <h3>Get Found</h3>
+
+        <div class="price">
+            $1,300<span>/mo</span>
+        </div>
+
+        <p class="plan-desc">
+            Perfect for businesses beginning their AI visibility journey.
+        </p>
+
+        <ul>
+            <li>✓ GEO Audit & Action Plan</li>
+            <li>✓ 2 SEO/GEO Blogs/Month</li>
+            <li>✓ 6 Social Media Posts/Month</li>
+            <li>✓ Google Business Profile Management</li>
+            <li>✓ Monthly Analytics Report</li>
+            <li>✓ Core Website Page SEO/GEO</li>
+            <li>✓ Bi-Weekly Meetings</li>
+        </ul>
+
+        <a href="https://calendly.com/kyle-lumomarketingstudio/introduction-meeting" target="_blank" rel="noopener noreferrer" class="pricing-btn">Get Started</a>
+
+    </div>
+
+    <div class="pricing-card featured">
+
+        <div class="popular-tag">
+            Most Popular
+        </div>
+
+        <span class="plan-type">CORE</span>
+
+        <h3>Get Competitive</h3>
+
+        <div class="price">
+            $2,400<span>/mo</span>
+        </div>
+
+        <p class="plan-desc">
+            Best for businesses competing in established markets.
+        </p>
+
+        <ul>
+            <li>✓ Everything in Starter</li>
+            <li>✓ 4 SEO/GEO Blog Posts/Month</li>
+            <li>✓ 10 Social Media Posts/Month</li>
+            <li>✓ 4 Linkedin Thought Leadership Posts/Month</li>
+            <li>✓ Main Website Pages SEO/GEO</li>
+            <li>✓ Monthly Analytics Report</li>
+            <li>✓ Weekly Meetings</li>
+        </ul>
+
+        <a href="https://calendly.com/kyle-lumomarketingstudio/introduction-meeting" target="_blank" rel="noopener noreferrer" class="pricing-btn">Get Started</a>
+
+    </div>
+
+    <div class="pricing-card">
+
+        <span class="plan-type">PREMIUM</span>
+
+        <h3>Full Service</h3>
+
+        <div class="price">
+            $4,000<span>/mo</span>
+        </div>
+
+        <p class="plan-desc">
+            Full AI visibility management for aggressive growth.
+        </p>
+
+        <ul>
+            <li>✓ Everything in Core</li>
+            <li>✓ 6 SEO/GEO Blog Posts/Month</li>
+            <li>✓ 16 Social Media Posts/Month</li>
+            <li>✓ 8 Linkedin Thought Leadership Posts/Month</li>
+            <li>✓ Complete Website SEO/GEO</li>
+            <li>✓ Bi-weekly Analytics Report</li>
+            <li>✓ Weekly Meetings + Top Priority</li>
+        </ul>
+
+        <a href="https://calendly.com/kyle-lumomarketingstudio/introduction-meeting" target="_blank" rel="noopener noreferrer" class="pricing-btn">Get Started</a>
+
+    </div>
+
+</div>
+</div> <!-- pricing-grid -->
+
+<section class="pricing-showcase fade-up">
+
+
+    <div class="pricing-image">
+        <img src="assets/Starter Example.png" alt="Starting Tier Graphic Example">
+    </div>
+
+</section>
+
+</div> <!-- geo-explainer -->
+</div>
+<section class="learn-more-mini">
+
+    <p class="learn-label">
+        Want to learn more about how Generative Engine Optimization works? 
+    </p>
+
+    <p class="learn-text">
+        Our GEO page covers how AI search engines decide which businesses to recommend. We'll explain the exact
+        process LUMO uses to get you found. 
+    </p>
+
+   <a href="GEO.html" class="cta-button learn-cta">
+        Learn More →
+    </a>
+
+</section>
+</section>
+
+ 
+
   <!-- CLIENT SHOWCASE -->
 <section class="client-showcase">
 
   <div class="showcase-header fade-up">
     <h2>Modern Websites Built to Create Leads</h2>
-    <p>View some of our past projects here</p>
+    <p>Need to update your website? We will modify or rebuild your website to include modern practices 
+      built around performance and customer conversions.</p>
   </div>
 
   <div class="showcase-grid">
@@ -180,40 +670,14 @@
 </a>
 
   </div>
-
-</section>
-
-  <!-- GEO SECTION -->
-<section class="geo-band">
-  <div class="geo-content fade-up">
-
-    <h2 class="fade-up delay-1">Generative Engine Optimization (GEO)</h2>
-
-    <h3 class="h2-lumo fade-up fade-delay-1">
-      How does your business perform when someone asks AI tools for your product or service?
-    </h3>
-
-    <p class="fade-up fade-delay-1">
-      LUMO is now offering cutting edge GEO services. If your business isn’t optimized for AI answers, you’re invisible to what’s becoming the most important discovery method online.
-    </p>
-
-    <p class="fade-up fade-delay-1">
-     <!-- LUMO structures your brand’s content so AI tools can confidently understand and recommend your products or services.-->
-    </p>
-     <p class="fade-up fade-delay-1">
-      Click here to explore how GEO is changing the game and how we can help you!
-    </p>
-    <p class="geo-diff fade-up fade-delay-2">
-       <a href="GEO.html" data-track-id="GEO-homepage-button" class="cta-button geo-cta">
-      GEO Services
-    </a>
-    </p>
-    <!--<p class="fade-up fade-delay-1"></br>We stay ahead of the game so your business doesn't fall behind.</p>-->
-
-    
-
+  <div class="showcase-footer fade-up">
+    <h2>Check Out Our Previous Works Here
+    </h2>
+      <a href="work.html" class="cta-button fade-up">View Selected Work</a>
   </div>
 </section>
+
+
 <section class="home-bg">
   <section class="home-intro">
 
@@ -259,7 +723,7 @@
   <div class="intro-block fade-up">
     <h2>About LUMO</h2>
     <p>
-      Based in Kansas and serving the Kansas City metro area, LUMO is a valuable provider because of our modern approach
+      Based in Kansas and serving anywhere across the country, LUMO is a valuable provider because of our modern approach
       and powerful values. Explore what makes LUMO a fair and trustworthy marketing agency
       who will go above and beyond for your success.
     </p>
@@ -314,6 +778,7 @@
       });
     });
   }
+
 </script>
 
  <!-- FOOTER -->

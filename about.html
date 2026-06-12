@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LUMO Marketing Studio - About</title>
-  <meta name="description" content="Learn about LUMO, where we operate, about our members, our core values.">
+  <meta name="description" content="Learn about LUMO, we are a digital marketing agency specializing in website design, SEO, Generative Engine Optimization (GEO), branding, analytics, and content strategy. We help businesses strengthen their online presence through modern marketing practices that improve visibility across both traditional search engines and AI-powered search platforms.">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -48,41 +48,68 @@
   "@graph": [
 
     {
+      "@type": "AboutPage",
+      "@id": "https://www.lumomarketingstudio.com/about.html",
+      "url": "https://www.lumomarketingstudio.com/about.html",
+      "name": "About LUMO Marketing Studio",
+      "description": "Learn about LUMO Marketing Studio, our philosophy, founder, services, and digital marketing expertise.",
+      "isPartOf": {
+        "@id": "https://www.lumomarketingstudio.com/#organization"
+      }
+    },
+
+    {
       "@type": "Organization",
+      "@id": "https://www.lumomarketingstudio.com/#organization",
       "name": "LUMO Marketing Studio",
-      "url": "https://lumomarketingstudio.com/",
-      "logo": "https://lumomarketingstudio.com/assets/dune%20logos/dune-logo-5.png",
-      "description": "LUMO Marketing Studio is a digital marketing agency specializing in SEO and Generative Engine Optimization (GEO), helping businesses increase visibility, traffic, and leads across search engines and AI platforms.",
+      "url": "https://www.lumomarketingstudio.com",
+      "logo": "https://www.lumomarketingstudio.com/assets/dune%20logos/L%20favicon%2096.png",
       "email": "lumomarketingstudio@gmail.com",
-      "sameAs": [
-        "https://www.instagram.com/lumo_marketingstudio",
-        "https://twitter.com/lumo_marketing",
-        "https://www.linkedin.com/company/lumo-marketing-studio/"
+      "description": "LUMO Marketing Studio is a digital marketing agency specializing in website development, SEO, Generative Engine Optimization (GEO), branding, analytics, content strategy, and digital growth.",
+      "founder": {
+        "@id": "https://www.lumomarketingstudio.com/#founder"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "Digital Marketing",
+        "Website Design",
+        "Website Development",
+        "Search Engine Optimization",
+        "Generative Engine Optimization",
+        "Analytics",
+        "Brand Strategy",
+        "Graphic Design",
+        "Content Marketing",
+        "Social Media Marketing"
       ]
     },
 
     {
       "@type": "Person",
+      "@id": "https://www.lumomarketingstudio.com/#founder",
       "name": "Kyle Owen",
       "jobTitle": "Founder",
       "worksFor": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
+        "@id": "https://www.lumomarketingstudio.com/#organization"
       },
-      "url": "https://lumomarketingstudio.com/about.html",
-      "description": "Kyle Owen is the founder of LUMO Marketing Studio, specializing in digital marketing, SEO, and Generative Engine Optimization (GEO). He combines creative design thinking with data-driven marketing strategies.",
-      "alumniOf": "University of Kansas",
-      "nationality": "American"
-    },
-
-    {
-      "@type": "AboutPage",
-      "name": "About LUMO Marketing Studio",
-      "url": "https://lumomarketingstudio.com/about.html",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "LUMO Marketing Studio"
-      }
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "The University of Kansas"
+      },
+      "knowsAbout": [
+        "Digital Marketing",
+        "SEO",
+        "Generative Engine Optimization",
+        "Website Development",
+        "Website Design",
+        "Analytics",
+        "Graphic Design",
+        "Brand Strategy",
+        "Marketing Strategy"
+      ]
     }
 
   ]
@@ -98,6 +125,7 @@
     <img src="assets/dune logos/dune-logo-5.png" alt="LUMO logo">
 </a>
     <nav>
+      <a href="GEO.html">GEO</a>
       <a href="services.html">Services</a>
       <a href="work.html">Work</a>
       <a href="about.html">About</a>

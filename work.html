@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LUMO Marketing Studio — Work</title>
-  <meta name="description" content="Explore LUMO's work page to see what we've accomplished in the past.">
+  <meta name="description" content="Explore LUMO's work page to see what we've built in the past.">
 
   <!-- Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,62 +48,89 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@graph":[
 
     {
-      "@type": "Organization",
-      "name": "LUMO Marketing Studio",
-      "url": "https://lumomarketingstudio.com/",
-      "logo": "https://lumomarketingstudio.com/assets/dune%20logos/dune-logo-5.png",
-      "description": "LUMO Marketing Studio is a digital marketing agency specializing in SEO and Generative Engine Optimization (GEO), helping businesses improve visibility across search engines and AI-driven platforms.",
-      "email": "lumomarketingstudio@gmail.com",
-      "sameAs": [
+      "@type":"CollectionPage",
+      "@id":"https://www.lumomarketingstudio.com/work.html",
+      "url":"https://www.lumomarketingstudio.com/work.html",
+      "name":"Selected Work | LUMO Marketing Studio",
+      "description":"Explore website design, branding, SEO, GEO, content strategy, analytics, and digital marketing projects completed by LUMO Marketing Studio.",
+      "isPartOf":{
+        "@id":"https://www.lumomarketingstudio.com/#website"
+      },
+      "about":{
+        "@id":"https://www.lumomarketingstudio.com/#organization"
+      }
+    },
+
+    {
+      "@type":"Organization",
+      "@id":"https://www.lumomarketingstudio.com/#organization",
+      "name":"LUMO Marketing Studio",
+      "url":"https://www.lumomarketingstudio.com",
+      "logo":"https://www.lumomarketingstudio.com/assets/LUMO-V4-(bigger-O).png",
+      "description":"LUMO Marketing Studio is a digital marketing agency specializing in website design, Generative Engine Optimization (GEO), SEO, branding, analytics, and content strategy.",
+      "email":"lumomarketingstudio@gmail.com",
+      "areaServed":"United States",
+      "sameAs":[
+        "https://www.linkedin.com/company/lumo-marketing-studio/",
         "https://www.instagram.com/lumo_marketingstudio",
-        "https://twitter.com/lumo_marketing",
-        "https://www.linkedin.com/company/lumo-marketing-studio/"
+        "https://twitter.com/lumo_marketing"
       ]
     },
 
     {
-      "@type": "WebPage",
-      "name": "LUMO Work / Portfolio",
-      "url": "https://lumomarketingstudio.com/work.html",
-      "description": "Selected client work including web design, SEO, branding, and digital marketing campaigns.",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Autism From the Start Website Redesign",
-              "description": "Website redesign, SEO optimization, analytics tracking, campaign strategy, and content production for a developmental services organization supporting children with autism.",
-              "url": "https://www.autismfromthestart.com/"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Virtue Production Website Development",
-              "description": "Website development and design for a Nashville-based sound production company offering event audio services and equipment rentals.",
-              "url": "https://www.virtueproduction.com"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Vortex Insurance Marketing & Strategy",
-              "description": "Digital marketing support including social media graphics, LinkedIn content, email marketing, and strategy development for a weather insurance company.",
-              "url": ""
-            }
-          }
-        ]
-      }
+      "@type":"CreativeWork",
+      "name":"Autism From the Start Website & Marketing Campaign",
+      "creator":{
+        "@id":"https://www.lumomarketingstudio.com/#organization"
+      },
+      "about":[
+        "Website Design",
+        "SEO",
+        "Generative Engine Optimization",
+        "Video Production",
+        "Photography",
+        "Marketing Analytics",
+        "Customer Acquisition",
+        "Healthcare Marketing"
+      ],
+      "description":"Complete website redesign, SEO implementation, GEO optimization, analytics tracking, video production, photography, customer acquisition campaigns, and website maintenance."
+    },
+
+    {
+      "@type":"CreativeWork",
+      "name":"Virtue Production Website Development",
+      "creator":{
+        "@id":"https://www.lumomarketingstudio.com/#organization"
+      },
+      "about":[
+        "Website Design",
+        "Website Development",
+        "Squarespace Development",
+        "Content Strategy",
+        "User Experience",
+        "Music Industry Marketing"
+      ],
+      "description":"Website development, visual design, content organization strategy, and user experience improvements for a live sound production company."
+    },
+
+    {
+      "@type":"CreativeWork",
+      "name":"Vortex Insurance Marketing Campaign",
+      "creator":{
+        "@id":"https://www.lumomarketingstudio.com/#organization"
+      },
+      "about":[
+        "Graphic Design",
+        "Email Marketing",
+        "LinkedIn Marketing",
+        "Social Media Marketing",
+        "Insurance Marketing",
+        "Marketing Strategy"
+      ],
+      "description":"Graphic design, social media content creation, LinkedIn marketing, email campaigns, and strategic marketing support for an insurance company."
     }
 
   ]
@@ -120,6 +147,7 @@
   </a>
 
   <nav>
+    <a href="GEO.html">GEO</a>
     <a href="services.html">Services</a>
     <a href="work.html">Work</a>
     <a href="about.html">About</a>
@@ -186,7 +214,7 @@ Explore our work with clients across the digital landscape. From building websit
           set up and track user activity, create customer and employee acquisition campaigns,
           video production, professional photography, and many behind the scenes website maintenance. 
           </br></br>Creating analytical trackers and reports led us to learn more about the user 
-          experience on the website, which then led to strategic structure, SEO, and campaign planning.</br></br> <a href="https://www.autismfromthestart.com/" target="_blank" rel="noopener noreferrer">Check out their website here!</a>
+          experience on the website, which then led to strategic structure, SEO, and campaign planning.</br></br> <a href="https://www.autismfromthestart.com/" target="_blank" rel="noopener noreferrer">Check out their website!</a>
       </p>
     </div>
   </div>
@@ -205,7 +233,7 @@ Explore our work with clients across the digital landscape. From building websit
         </br></br>We recently finished their website and are now looking forward to customer acquisition campaigns. 
         LUMO helped with the development of their squarespace website, the design of the website,
          content, organization strategy, and user interaction.  
-        </br></br><a href="https://www.virtueproduction.com" target="_blank" rel="noopener no-referrer"> Click here to visit their website!</a>
+        </br></br><a href="https://www.virtueproduction.com" target="_blank" rel="noopener no-referrer"> Check out their website!</a>
       </p>
     </div>
   </div>
