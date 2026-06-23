@@ -554,6 +554,8 @@ body {
     backdrop-filter:blur(12px);
     -webkit-backdrop-filter:blur(12px);
     transition:.35s ease;
+        display:flex;
+    flex-direction:column;
 }
 
 .pricing-card:hover{
@@ -643,7 +645,7 @@ body {
     border-radius:8px;
     color:#fff;
     text-decoration:none;
-    margin-top:36px;
+    margin-top:auto;
     transition:.3s;
 }
 
@@ -1259,5 +1261,23 @@ body {
     height:auto;
     border-radius:14px;
     transition:transform .4s ease;
+}
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    justify-content: center;
+    transform: translateY(40px); /* Push everything down */
+  }
+
+  .hero-tagline {
+    bottom: 60px; /* Keep it inside the hero */
+    left: 20px;
+    right: 20px;
+    max-width: calc(100% - 40px);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
 }
 

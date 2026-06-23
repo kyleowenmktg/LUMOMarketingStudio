@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Blog - LUMO Marketing Studio
+  </title>
+  <meta name="description" content="Keep up to date with current events in marketing and at LUMO. Learn about our GEO services, the science behind it, and how we create value.">
+
+
+  <link rel="icon" href="assets/dune logos/L favicon 482.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="assets/dune logos/L favicon 96.png" type="image/png" sizes="96x96">
+
+  <!-- Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-p9Qb4TH0vVukx5cYzJcN2wqY6MdZKkHxk8cGj4gZb6H+XoU/NUD/m1uCzO0ku7Zl5N6G6URf3ZvQhK3jF9I3jA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKP6346BGR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LKP6346BGR');
+</script>
+
+<link rel="canonical" href="https://lumomarketingstudio.com/blog">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKP6346BGR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LKP6346BGR');
+</script>
+  
+  <link rel="stylesheet" href="css/blog.css">
+
+  <!-- Chrome / Android translucent -->
+<meta name="theme-color" content="rgba(20, 73, 97, 0.6)">
+
+<!-- Safari / iOS translucent -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Schema-->
+<script type="application/ld+json">
+
+
+</script>
+
+</head>
+
+<body>
+  <!-- HEADER / NAV -->
+  <header class="nav">
+   <a href="index.html" class="logo">
+  <img src="assets/dune logos/dune-logo-5.png" alt="LUMO logo">
+</a>
+    <nav>
+      <a href="GEO.html">GEO</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<div class="geo-bg">
+
+    <!-- =========================
+     BLOG HERO
+========================= -->
+
+<section class="blog-hero">
+
+    <div class="blog-label">
+        LUMO BLOGS
+    </div>
+
+    <h1>
+        INSIGHTS FOR THE
+        <span>ERA OF AI.</span>
+    </h1>
+
+    <p>
+        Explore expert articles covering
+        Generative Engine Optimization,
+        AI Search, SEO, Website Design,
+        Branding and Digital Marketing.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     FILTERS
+========================= -->
+
+<section class="blog-filters">
+
+...
+
+</section>
+
+
+
+<!-- =========================
+     BLOG GRID
+========================= -->
+
+<section class="blog-grid">
+
+...
+
+</section>
+
+ <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <div class="footer-location">
+        Based in Kansas City
+      </div>
+      <div class="footer-email">
+        lumomarketingstudio@gmail.com
+
+      </div>
+         <!-- <div class="footer-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div> -->
+    </div>
+
+  
+
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <div class="footer-links">
+        <a href="legal/privacy-policy.html" target="_blank">Privacy Policy</a>
+        <a href="legal/terms.html" target="_blank">Terms of Service</a>
+        <!--<a href="legal/contact.html"></a>-->
+      </div>
+      <div class="footer-copy">
+        © 2026 LUMO Marketing Studio
+      </div>
+    </div>
+
+  </div>
+</footer>
+    
+    <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-up, blur-reveal").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+<script>
+  const videos = document.querySelectorAll('.hover-video');
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    videos.forEach(video => observer.observe(video));
+  } else {
+    videos.forEach(video => {
+      video.pause();
+
+      video.parentElement.addEventListener('mouseenter', () => {
+        video.play();
+      });
+
+      video.parentElement.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  }
+
+</script>
+</body>

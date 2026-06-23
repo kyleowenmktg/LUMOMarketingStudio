@@ -1078,6 +1078,9 @@ grid-template-columns:1fr;
     backdrop-filter:blur(12px);
     -webkit-backdrop-filter:blur(12px);
     transition:.35s ease;
+            display:flex;
+    flex-direction:column;
+
 }
 
 .pricing-card:hover{
@@ -1163,7 +1166,7 @@ grid-template-columns:1fr;
     border-radius:8px;
     color:#fff;
     text-decoration:none;
-    margin-top:36px;
+    margin-top:auto;
     transition:.3s;
 }
 
