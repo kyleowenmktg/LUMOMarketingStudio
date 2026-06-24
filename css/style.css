@@ -1281,3 +1281,121 @@ body {
 
 }
 
+
+/* =========================
+   GEO AUDIT SECTION
+========================= */
+
+.geo-audit{
+    margin-top:120px;
+    margin-bottom:140px;
+}
+
+.geo-audit-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.geo-audit-text h2{
+    font-size:clamp(2.5rem,6vw,5rem);
+    line-height:.95;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:24px 0 28px;
+    color:rgba(255,255,255,.38);
+}
+
+.geo-audit-text h2 span{
+    background:linear-gradient(
+        90deg,
+        #c6d9dd,
+        #5febcc
+    );
+
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.2),
+        0 0 16px rgba(95,235,204,.15);
+}
+
+.geo-audit-text p{
+    font-size:1.05rem;
+    line-height:1.9;
+    opacity:.82;
+}
+
+.audit-list{
+    list-style:none;
+    padding:0;
+    margin:35px 0;
+}
+
+.audit-list li{
+    margin-bottom:16px;
+    font-size:1rem;
+    opacity:.9;
+}
+
+.audit-note{
+    font-size:.95rem;
+    opacity:.65;
+    margin-bottom:30px;
+}
+
+.geo-audit-video{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    overflow:hidden;
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+}
+
+.geo-audit-video video{
+    width:100%;
+    display:block;
+}
+
+.geo-audit-video:hover{
+    border-color:rgba(95,235,204,.25);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(95,235,204,.08);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .geo-audit-content{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .geo-audit-video{
+        order:-1;
+    }
+
+    .geo-audit{
+        margin-top:80px;
+        margin-bottom:90px;
+    }
+
+}
+
+.h1-adjacent {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}

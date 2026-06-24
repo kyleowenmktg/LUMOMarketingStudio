@@ -1307,3 +1307,261 @@ grid-template-columns:1fr;
     margin-bottom: 34px;
 
 }
+
+.h1-adjacent {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+/* =========================
+   GEO AUDIT TOOL
+========================= */
+
+.geo-audit{
+    padding:0 8vw 140px;
+}
+
+.geo-audit-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.geo-audit-text h2{
+    font-size:clamp(3rem,8vw,6rem);
+    line-height:.92;
+    font-weight:700;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.38);
+    margin-bottom:28px;
+}
+
+.geo-audit-text h2 span{
+    background:linear-gradient(
+        90deg,
+        #c6d9dd,
+        #5febcc
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.geo-audit-text p{
+    font-size:1.05rem;
+    line-height:1.9;
+    opacity:.82;
+    margin-bottom:34px;
+    max-width:650px;
+}
+
+.audit-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px 28px;
+    margin-bottom:40px;
+}
+
+.audit-list li{
+    opacity:.9;
+    line-height:1.7;
+}
+
+.geo-audit-video{
+    position:relative;
+    overflow:hidden;
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+
+    transition:.35s ease;
+}
+
+.geo-audit-video:hover{
+    transform:translateY(-6px);
+    border-color:rgba(95,235,204,.25);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(95,235,204,.08);
+}
+
+.geo-audit-video video{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.geo-audit .cta-button{
+    display:inline-block;
+    padding:16px 40px;
+    border:1px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+.geo-audit .cta-button:hover{
+    background:#fff;
+    color:#000;
+}
+
+@media(max-width:900px){
+
+    .geo-audit-content{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .audit-list{
+        grid-template-columns:1fr;
+    }
+
+}
+/* =========================
+   GEO AUDIT MOBILE
+========================= */
+
+@media (max-width: 900px){
+
+    .geo-audit{
+        padding: 0 8vw 100px;
+    }
+
+    .geo-audit-content{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .audit-list{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .geo-audit{
+        padding: 0 8vw 80px;
+    }
+
+    .geo-audit-text h2{
+        font-size: clamp(2.2rem, 10vw, 3.5rem);
+        margin-bottom: 20px;
+    }
+
+    .geo-audit-text p{
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .audit-list{
+        margin-bottom: 32px;
+    }
+
+    .audit-list li{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .geo-audit-video{
+        border-radius: 10px;
+    }
+
+    .geo-audit-video video{
+        min-height: unset;
+        max-height: 260px;
+        object-fit: cover;
+    }
+
+    .geo-audit .cta-button{
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .geo-audit-content{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+}
+
+/* =========================
+   MOBILE HEADING SPACING
+========================= */
+
+@media (max-width: 768px){
+
+    /* Main section containers */
+    .geo-page,
+    .geo-explainer{
+        padding-bottom: 80px;
+    }
+
+    /* Large GEO-style headings */
+    .geo-page h2,
+    .geo-explainer h2,
+    .geo-audit-text h2{
+        font-size: clamp(2.2rem, 10vw, 3.5rem);
+        line-height: 1;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+
+    /* Smaller section headings */
+    .center-title,
+    .geo-cta h2{
+        margin-bottom: 20px;
+        line-height: 1.15;
+    }
+
+    /* Intro paragraphs below headings */
+    .geo-intro{
+        font-size: 1rem;
+        line-height: 1.75;
+        margin-bottom: 40px;
+    }
+
+    /* Service / pricing / comparison card titles */
+    .service-card h3,
+    .pricing-card h3,
+    .comparison-column h3,
+    .business-card h3,
+    .geo-card h3{
+        margin-bottom: 14px;
+    }
+
+    /* Tighten large section spacing */
+    .services-grid,
+    .pricing-grid,
+    .comparison-grid,
+    .business-grid,
+    .geo-steps{
+        margin-top: 40px;
+    }
+
+    /* Pricing cards */
+    .pricing-card{
+        padding: 32px;
+    }
+
+    .price{
+        font-size: 2.6rem;
+    }
+
+}
