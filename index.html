@@ -72,27 +72,17 @@
       "image": {
         "@id": "https://lumomarketingstudio.com/#logo"
       },
-      "description": "LUMO Marketing Studio is a full-service digital marketing agency specializing in Generative Engine Optimization (GEO), SEO, website design, branding, content strategy, analytics, and AI search visibility.",
       "email": "lumomarketingstudio@gmail.com",
-      "location": {
-        "@type": "Place",
-        "name": "Kansas City, Missouri",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kansas City",
-          "addressRegion": "MO",
-          "addressCountry": "US"
-        }
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
+      "description": "LUMO Marketing Studio is a digital marketing agency specializing in Generative Engine Optimization (GEO), AI Visibility Audits, SEO, website design, branding, content strategy, analytics, and AI search optimization.",
       "sameAs": [
         "https://www.linkedin.com/company/lumo-marketing-studio/",
         "https://www.instagram.com/lumo_marketingstudio",
         "https://twitter.com/lumo_marketing"
       ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
       "hasOfferCatalog": {
         "@id": "https://lumomarketingstudio.com/#services"
       }
@@ -106,14 +96,13 @@
       "image": {
         "@id": "https://lumomarketingstudio.com/#logo"
       },
-      "description": "Digital marketing agency specializing in website design, SEO, Generative Engine Optimization (GEO), branding, analytics, and AI search visibility.",
       "email": "lumomarketingstudio@gmail.com",
       "priceRange": "$$$",
+      "description": "Digital marketing agency helping businesses increase visibility in AI search engines through GEO, SEO, web development, branding, and analytics.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Kansas City",
         "addressRegion": "MO",
-        "postalCode": "64108",
         "addressCountry": "US"
       },
       "areaServed": {
@@ -122,14 +111,16 @@
       },
       "knowsAbout": [
         "Generative Engine Optimization",
+        "AI Search Optimization",
+        "AI Visibility",
+        "AI Visibility Audits",
         "Search Engine Optimization",
         "Website Design",
         "Website Development",
         "Brand Strategy",
-        "Digital Marketing",
-        "AI Search Optimization",
         "Content Marketing",
-        "Analytics"
+        "Analytics",
+        "Digital Marketing"
       ]
     },
 
@@ -147,8 +138,8 @@
       "@type": "WebPage",
       "@id": "https://lumomarketingstudio.com/#homepage",
       "url": "https://lumomarketingstudio.com/",
-      "name": "LUMO Marketing Studio | AI Search & Digital Marketing Agency",
-      "description": "LUMO Marketing Studio helps businesses grow through website design, SEO, Generative Engine Optimization (GEO), branding, and AI search optimization.",
+      "name": "LUMO Marketing Studio | AI Visibility & Digital Marketing",
+      "description": "LUMO helps businesses become visible in ChatGPT, Google AI Overviews, Gemini, Claude, and other AI search engines through Generative Engine Optimization (GEO), AI Visibility Audits, SEO, website design, branding, and analytics.",
       "isPartOf": {
         "@id": "https://lumomarketingstudio.com/#website"
       },
@@ -157,6 +148,14 @@
       },
       "primaryImageOfPage": {
         "@id": "https://lumomarketingstudio.com/#logo"
+      },
+      "mainEntity": {
+        "@id": "https://lumomarketingstudio.com/#services"
+      },
+      "potentialAction": {
+        "@type": "ContactAction",
+        "target": "https://lumomarketingstudio.com/contact.html",
+        "name": "Request an AI Visibility Audit"
       }
     },
 
@@ -175,21 +174,24 @@
 
         {
           "@type": "Service",
-          "name": "Generative Engine Optimization",
+          "name": "Generative Engine Optimization (GEO)",
           "serviceType": "AI Search Optimization",
+          "description": "Optimize your business so AI systems like ChatGPT, Google AI Overviews, Claude, Gemini and Perplexity confidently recommend your business.",
           "provider": {
             "@id": "https://lumomarketingstudio.com/#organization"
           }
         },
-    {
-      "@type": "Service",
-      "name": "AI Visibility Audit",
-      "serviceType": "Generative Engine Optimization Audit",
-      "description": "Comprehensive AI visibility audit analyzing business performance across ChatGPT, Claude, Google AI Overviews, Gemini, and other AI-powered search experiences.",
-      "provider": {
-        "@id": "https://lumomarketingstudio.com/#organization"
-      }
-    },
+
+        {
+          "@type": "Service",
+          "name": "AI Visibility Audit",
+          "serviceType": "Generative Engine Optimization Audit",
+          "description": "Comprehensive AI visibility audit measuring performance across ChatGPT, Google AI Overviews, Claude, Gemini and other AI search platforms.",
+          "provider": {
+            "@id": "https://lumomarketingstudio.com/#organization"
+          }
+        },
+
         {
           "@type": "Service",
           "name": "Search Engine Optimization",
@@ -232,7 +234,7 @@
 
         {
           "@type": "Service",
-          "name": "Email Marketing",
+          "name": "Content Marketing",
           "provider": {
             "@id": "https://lumomarketingstudio.com/#organization"
           }
@@ -244,21 +246,39 @@
           "provider": {
             "@id": "https://lumomarketingstudio.com/#organization"
           }
-        },
-
-        {
-          "@type": "Service",
-          "name": "Content Strategy",
-          "provider": {
-            "@id": "https://lumomarketingstudio.com/#organization"
-          }
         }
+      ]
+    },
 
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://lumomarketingstudio.com/#pricing",
+      "name": "Marketing Plans",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "1200",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Core",
+          "price": "2400",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "4000",
+          "priceCurrency": "USD"
+        }
       ]
     }
 
   ]
 }
+</script>
   </script>
 <meta property="og:title" content="LUMO Marketing Studio">
 <meta property="og:description" content="Strategic websites, SEO, GEO, branding, and analytics for modern businesses.">
@@ -300,8 +320,8 @@
 
     <!-- Overlay Content -->
     <div class="hero-tagline">
-  <p> LUMO is a full service marketing agency built for the era of AI search. We optimize your digital 
-    presence so that your brand is visible everywhere, to people and systems. 
+  <p> LUMO is a marketing agency focused on optimizing your business for AI visibility. We help businesses show up in 
+    AI generated answers such as, ChatGPT and Google AI Overviews.
 
   </p>
     </div>
@@ -314,31 +334,86 @@
     </div>
   </section>
 
- <!-- 
-<section class="welcome-lumo">
+<!-- START HERE -->
+<section class="quick-nav-section">
 
-    <div class="welcome-bg">
-        LUMO
-    </div>
+    <div class="quick-nav">
 
-    <div class="welcome-content fade-up">
+        <div class="quick-nav-header fade-up">
 
-        <p class="welcome-statement">
-            LUMO is a modern marketing studio that combines branding,
-            website design, SEO, Generative Engine Optimization,
-            content strategy, and analytics into one unified system
-            built to make businesses impossible to ignore online.
-        </p>
+            <h2>WHERE WOULD YOU LIKE TO BEGIN?</h2>
+
+            <p>
+                Learn more about our services, start an AI visibility audit for your business,
+                or explore our pricing plans to find the right approach for your business.
+            </p>
+
+        </div>
+
+        <div class="quick-nav-grid">
+
+            <!-- GEO -->
+            <a href="GEO.html" class="quick-nav-card fade-up">
+
+                <div class="quick-nav-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <h3>GEO Services</h3>
+
+                <p>
+                    Learn how businesses become recommended inside AI search engines.
+                </p>
+
+                <span>Explore GEO →</span>
+
+            </a>
+
+            <!-- AUDIT -->
+            <a href="audit.html" class="quick-nav-card fade-up">
+
+                <div class="quick-nav-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>AI Visibility Audit</h3>
+
+                <p>
+                    Discover how your business performs across ChatGPT, Claude,
+                    Gemini and Google AI.
+                </p>
+
+                <span>Start Audit →</span>
+
+            </a>
+
+            <!-- PRICING -->
+            <a href="#pricing" class="quick-nav-card fade-up">
+
+                <div class="quick-nav-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <h3>Pricing</h3>
+
+                <p>
+                    Compare plans built around your business goals and growth.
+                </p>
+
+                <span>View Pricing →</span>
+
+            </a>
+
+        </div>
 
     </div>
 
 </section>
--->
   <!-- GEO SECTION -->
 <section class="geo-band">
   <div class="geo-content fade-up">
     <div class="ai-tag fade-up fade-delay-1">
-      AI SEARCH OPTIMIZATION
+     GENERATIVE ENGINE OPTIMIZATION
     </div>
     <h2 class= "fade-up delay-1">YOUR COMPETITORS ARE IN
       <span>AI ANSWERS.</span>
@@ -414,7 +489,7 @@
 </div> -->
 
 <!-- GEO AUDIT TOOL -->
-<section class="geo-audit fade-up">
+<section id="geo-audit" class="geo-audit fade-up">
 
     <div class="geo-audit-content">
 
@@ -562,7 +637,7 @@
 
 </div>
 <!--Pricing-->
-<div class="geo-explainer fade-up">
+<div id="pricing" class="geo-explainer fade-up">
 
  <div class="h1-adjacent">Pricing</div>
 
@@ -572,7 +647,7 @@
 
     <p class="geo-intro">
       We offer 3 digital marketing tiers built around where your business 
-      is right now. All plans include a 3-month minimum commitment.
+      is right now. Plans are built and priced specifically to your business, these prices are a base reference. 
       Custom configurations are welcomed as well. Get in contact to discuss!
     </p>
 <div class="pricing-grid">
@@ -597,7 +672,7 @@
             <li>✓ 2 GEO Engineered Blogs for AI Citations</li>
             <li>✓ Brand Content Consistency</li>
             <li>✓ 4 Authority/AI Trust Built LinkedIn posts</li>
-            <li>✓ 2 Monthly Analytics Report</li>
+            <li>✓ Monthly Analytics Report</li>
             <li>✓ Bi-Weekly Meetings</li>
             <li></li>
         </ul>

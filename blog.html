@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Blog - LUMO Marketing Studio
-  </title>
-  <meta name="description" content="Keep up to date with current events in marketing and at LUMO. Learn about our GEO services, the science behind it, and how we create value.">
+  <title>GEO & AI Search Visibility Insights | LUMO Marketing Studio</title>
+  <meta name="description" content="Practical guides on GEO and AI Search, learn the science behind how AI search engines decide which businesses to recommend.">
 
 
   <link rel="icon" href="assets/dune logos/L favicon 482.png" type="image/png" sizes="48x48">
@@ -52,8 +51,88 @@
 
 <!-- Schema-->
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
 
+    {
+      "@type": "Organization",
+      "@id": "https://lumomarketingstudio.com/#organization",
+      "name": "LUMO Marketing Studio",
+      "url": "https://lumomarketingstudio.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lumomarketingstudio.com/assets/dune%20logos/dune-logo-5.png"
+      }
+    },
 
+    {
+      "@type": "WebSite",
+      "@id": "https://lumomarketingstudio.com/#website",
+      "url": "https://lumomarketingstudio.com",
+      "name": "LUMO Marketing Studio",
+      "publisher": {
+        "@id": "https://lumomarketingstudio.com/#organization"
+      }
+    },
+
+    {
+      "@type": "CollectionPage",
+      "@id": "https://lumomarketingstudio.com/blog/#webpage",
+      "url": "https://lumomarketingstudio.com/blog",
+      "name": "GEO & AI Search Visibility Insights",
+      "description": "Educational articles from LUMO Marketing Studio covering Generative Engine Optimization (GEO), AI Search, SEO, website strategy, branding, and digital marketing.",
+      "isPartOf": {
+        "@id": "https://lumomarketingstudio.com/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Generative Engine Optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "AI Search"
+        },
+        {
+          "@type": "Thing",
+          "name": "Search Engine Optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Website Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Digital Marketing"
+        }
+      ],
+      "publisher": {
+        "@id": "https://lumomarketingstudio.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://lumomarketingstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://lumomarketingstudio.com/blog"
+        }
+      ]
+    }
+
+  ]
+}
 </script>
 
 </head>
@@ -64,15 +143,21 @@
    <a href="index.html" class="logo">
   <img src="assets/dune logos/dune-logo-5.png" alt="LUMO logo">
 </a>
+
+    <button class="menu-toggle" aria-label="Open menu">
+        ☰
+    </button>
+
     <nav>
       <a href="GEO.html">GEO</a>
       <a href="services.html">Services</a>
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-<div class="geo-bg">
+<div class="blog-bg">
 
     <!-- =========================
      BLOG HERO
@@ -85,8 +170,8 @@
     </div>
 
     <h1>
-        INSIGHTS FOR THE
-        <span>ERA OF AI.</span>
+        GEO & AI SEARCH VISIBILITY
+        <span>INSIGHTS</span>
     </h1>
 
     <p>
@@ -106,8 +191,30 @@
 
 <section class="blog-filters">
 
-...
+<section class="blog-filters">
 
+    <button class="active" data-filter="all">All Articles</button>
+ <button data-filter="geo">
+    GEO Fundamentals
+</button>
+
+<button data-filter="ai-search">
+    AI Search Trends
+</button>
+
+<button data-filter="technical-seo">
+    Technical SEO
+</button>
+
+<button data-filter="local-marketing">
+    Local Marketing
+</button>
+
+<button data-filter="case-studies">
+    Case Studies
+</button>
+
+</section>
 </section>
 
 
@@ -118,9 +225,126 @@
 
 <section class="blog-grid">
 
-...
+  <a href="blog/what-is-geo.html" class="blog-card" data-category="geo">
 
+    <div class="blog-pill">
+        GEO Fundamentals
+    </div>
+
+    <h3>
+        What Is Generative Engine Optimization?
+    </h3>
+
+    <p>
+        Learn how GEO helps businesses become visible in AI-powered search engines like ChatGPT, Gemini, Claude, and Perplexity. Discover why traditional SEO alone is no longer enough for modern online visibility.
+    </p>
+
+    <span>
+        June 25, 2026
+    </span>
+
+</a>
+<a href="blogs/what-is-geo.html" class="blog-card" data-category="ai-search">
+
+        <div class="blog-pill">
+            GEO Fundamentals
+        </div>
+
+        <h3>
+            What Is Generative Engine Optimization?
+        </h3>
+
+        <p>
+            Learn how GEO helps businesses increase visibility in AI-powered search platforms like ChatGPT, Gemini, Claude, and Perplexity.
+        </p>
+
+        <span>
+            June 25, 2026
+        </span>
+
+    </a>
+
+    <a href="#" class="blog-card">
+
+        <div class="blog-pill">
+            AI Search Trends
+        </div>
+
+        <h3>
+            How AI Search Is Changing Marketing
+        </h3>
+
+        <p>
+            Explore how conversational AI is reshaping online discovery and what businesses must do to stay visible.
+        </p>
+
+        <span>
+            June 20, 2026
+        </span>
+
+    </a>
+
+    <a href="#" class="blog-card">
+
+        <div class="blog-pill">
+            Technical SEO
+        </div>
+
+        <h3>
+            Structured Data for AI Search
+        </h3>
+
+        <p>
+            Discover why schema markup and entity relationships are becoming essential for AI visibility.
+        </p>
+
+        <span>
+            June 18, 2026
+        </span>
+
+    </a>
+
+    <a href="#" class="blog-card">
+
+        <div class="blog-pill">
+            Local Marketing
+        </div>
+
+        <h3>
+            Local GEO Strategies for Small Businesses
+        </h3>
+
+        <p>
+            Learn how local companies can increase their chances of being recommended by AI systems.
+        </p>
+
+        <span>
+            June 14, 2026
+        </span>
+
+    </a>
+
+    <a href="#" class="blog-card">
+
+        <div class="blog-pill">
+            Case Studies
+        </div>
+
+        <h3>
+            GEO Visibility Audit Walkthrough
+        </h3>
+
+        <p>
+            See how LUMO's AI Visibility Audit identifies opportunities to improve AI search performance.
+        </p>
+
+        <span>
+            June 10, 2026
+        </span>
+
+    </a>
 </section>
+
 
  <!-- FOOTER -->
 <footer class="footer">
@@ -205,5 +429,50 @@
     });
   }
 
+
+
+</script>
+<script>
+const menuButton = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav nav');
+
+menuButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+</script>
+<script>
+const filterButtons = document.querySelectorAll('.blog-filters button');
+const blogCards = document.querySelectorAll('.blog-card');
+
+filterButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach(btn =>
+            btn.classList.remove('active')
+        );
+
+        button.classList.add('active');
+
+        blogCards.forEach(card => {
+
+            const category = card.dataset.category;
+
+            if (
+                filter === 'all' ||
+                category === filter
+            ) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+
+        });
+
+    });
+
+});
 </script>
 </body>

@@ -5,6 +5,16 @@
 /* ==========================
    BLOG HERO
 ========================== */
+.blog-bg{
+    position:relative;
+    min-height:100vh;
+
+    background-image:url("../assets/AFTS/blog\ bg.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
 
 .blog-hero{
     padding:190px 8vw 100px;
@@ -25,25 +35,21 @@
     backdrop-filter:blur(12px);
 }
 .blog-hero h1{
-    max-width:1100px;
-    font-size:clamp(4rem,8vw,7.5rem);
-    line-height:1.05;
-    font-weight:500;
-    letter-spacing:-2px;
+    font-size:clamp(3.5rem,8vw,6.5rem);
+    line-height:.9;
     text-transform:uppercase;
-    color:rgba(255,255,255,.35);
+    font-weight:600;
+    letter-spacing:3px;
+    color:rgba(216, 216, 216, 0.596);
+    margin:0; /* reset so gap controls spacing */
 }
 
 
 .blog-hero h1 span{
-
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #5febcc
-    );
+    background:linear-gradient(90deg,#ffffff,#5febcc);
     -webkit-background-clip:text;
-   -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 
 }
 .blog-subtitle{
@@ -358,30 +364,6 @@ body {
 
 @media (max-width: 768px) {
 
-  .nav {
-    padding: 16px 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .logo img {
-    height: 42px;
-  }
-
-  .nav nav {
-    display: flex;
-    gap: 12px;
-    flex-wrap: nowrap;
-    max-width: 65%;
-  }
-
-  .nav nav a {
-    margin-left: 0;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-  }
 
   /* FOOTER (IDENTICAL BEHAVIOR) */
   .footer-content {
@@ -493,4 +475,86 @@ body {
 .footer-copy {
   font-size: 12px;
   opacity: 0.6;
+}
+
+
+.blog-card{
+    transition:
+        transform .35s,
+        opacity .3s;
+}
+
+@media(max-width:768px){
+
+.blog-filters{
+  
+    gap:6px;
+    padding:0 4vw 50px;
+}
+
+.blog-filters button{
+    padding:8px 12px;
+    font-size:.72rem;
+    letter-spacing:.2px;
+}
+}
+
+/*HAMBURGER MENU*/
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        background:none;
+        border:none;
+        color:#fff;
+        font-size:2rem;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    .nav{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        padding:16px 20px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .nav nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        right:20px;
+
+        flex-direction:column;
+        gap:16px;
+
+        padding:20px;
+        min-width:220px;
+
+        background:rgba(10,10,10,.97);
+        border:1px solid rgba(255,255,255,.08);
+        border-radius:14px;
+        backdrop-filter:blur(18px);
+
+        z-index:999;
+    }
+
+    .nav nav.active{
+        display:flex;
+    }
+
+    .nav nav a{
+        margin:0;
+        font-size:14px;
+    }
+
+}
+
+/* Desktop */
+.menu-toggle{
+    display:none;
 }
