@@ -1,0 +1,8 @@
+# robots.txt for LUMO Marketing Studio
+# https://lumomarketingstudio.com
+
+User-agent: *
+Allow: /
+
+# XML Sitemap
+Sitemap: https://lumomarketingstudio.com/sitemap.xml
