@@ -396,12 +396,12 @@ body {
   padding: 16px 32px;
   font-size: 1rem;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, .65);
-  border: 1px solid rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, .95);
+  border: 1px solid rgba(255, 255, 255, .50);
   background: transparent;
   cursor: pointer;
   text-decoration: none;
-  transition: border-color .3s ease, color .3s ease, transform .25s ease;
+  transition: border-color .2s ease, color .3s ease, transform .25s ease;
 }
 
 .secondary-btn:hover {
