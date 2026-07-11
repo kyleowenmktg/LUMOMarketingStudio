@@ -1292,15 +1292,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Dark overlay so the card and text stay readable
-   regardless of what the background image looks like */
-.blog-teaser::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.55);
-    z-index: 0;
-}
+
 
 .blog-teaser-card{
     max-width: 800px;
