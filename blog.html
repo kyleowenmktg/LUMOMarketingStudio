@@ -53,81 +53,119 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@graph":[
 
     {
-      "@type": "Organization",
-      "@id": "https://lumomarketingstudio.com/#organization",
-      "name": "LUMO Marketing Studio",
-      "url": "https://lumomarketingstudio.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://lumomarketingstudio.com/assets/dune%20logos/dune-logo-5.png"
-      }
-    },
-
-    {
-      "@type": "WebSite",
-      "@id": "https://lumomarketingstudio.com/#website",
-      "url": "https://lumomarketingstudio.com",
-      "name": "LUMO Marketing Studio",
-      "publisher": {
-        "@id": "https://lumomarketingstudio.com/#organization"
-      }
-    },
-
-    {
-      "@type": "CollectionPage",
-      "@id": "https://lumomarketingstudio.com/blog/#webpage",
-      "url": "https://lumomarketingstudio.com/blog",
-      "name": "GEO & AI Search Visibility Insights",
-      "description": "Educational articles from LUMO Marketing Studio covering Generative Engine Optimization (GEO), AI Search, SEO, website strategy, branding, and digital marketing.",
-      "isPartOf": {
-        "@id": "https://lumomarketingstudio.com/#website"
+      "@type":"CollectionPage",
+      "@id":"https://lumomarketingstudio.com/blog.html",
+      "url":"https://lumomarketingstudio.com/blog.html",
+      "name":"LUMO Blog | GEO & AI Search Visibility Insights",
+      "headline":"GEO & AI Search Visibility Insights",
+      "description":"Explore expert articles covering Generative Engine Optimization (GEO), AI Search, SEO, website design, branding, and digital marketing.",
+      "inLanguage":"en-US",
+      "isPartOf":{
+        "@id":"https://lumomarketingstudio.com/#website"
       },
-      "about": [
+      "about":[
         {
-          "@type": "Thing",
-          "name": "Generative Engine Optimization"
+          "@type":"Thing",
+          "name":"Generative Engine Optimization"
         },
         {
-          "@type": "Thing",
-          "name": "AI Search"
+          "@type":"Thing",
+          "name":"AI Search"
         },
         {
-          "@type": "Thing",
-          "name": "Search Engine Optimization"
+          "@type":"Thing",
+          "name":"Search Engine Optimization"
         },
         {
-          "@type": "Thing",
-          "name": "Website Design"
+          "@type":"Thing",
+          "name":"Website Design"
         },
         {
-          "@type": "Thing",
-          "name": "Digital Marketing"
+          "@type":"Thing",
+          "name":"Branding"
+        },
+        {
+          "@type":"Thing",
+          "name":"Digital Marketing"
         }
       ],
-      "publisher": {
-        "@id": "https://lumomarketingstudio.com/#organization"
-      },
-      "inLanguage": "en-US"
+
+      "publisher":{
+        "@id":"https://lumomarketingstudio.com/#organization"
+      }
+
     },
 
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@type":"BreadcrumbList",
+      "@id":"https://lumomarketingstudio.com/blog.html#breadcrumb",
+      "itemListElement":[
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://lumomarketingstudio.com/"
+          "@type":"ListItem",
+          "position":1,
+          "name":"Home",
+          "item":"https://lumomarketingstudio.com/"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://lumomarketingstudio.com/blog"
+          "@type":"ListItem",
+          "position":2,
+          "name":"Blog",
+          "item":"https://lumomarketingstudio.com/blog.html"
         }
+      ]
+    },
+
+    {
+      "@type":"ItemList",
+      "name":"LUMO Blog Articles",
+      "numberOfItems":6,
+      "itemListElement":[
+
+        {
+          "@type":"ListItem",
+          "position":1,
+          "url":"https://lumomarketingstudio.com/blog/what-is-GEO-at-LUMO.html",
+          "name":"What Is Generative Engine Optimization?"
+        },
+
+        {
+          "@type":"ListItem",
+          "position":2,
+          "url":"https://lumomarketingstudio.com/blog/how-to-test-your-ai-visibility.html",
+          "name":"How to Test Your Brand's AI Visibility Firsthand"
+        },
+
+        {
+          "@type":"ListItem",
+          "position":3,
+          "url":"https://lumomarketingstudio.com/blog/how-lumos-ai-visibility-audit-works.html",
+          "name":"How Does LUMO's AI Visibility Audit Work?"
+        },
+
+        {
+          "@type":"ListItem",
+          "position":4,
+          "url":"https://lumomarketingstudio.com/blog/structured-data-for-ai-search.html",
+          "name":"Structured Data for AI Search"
+        },
+
+        {
+          "@type":"ListItem",
+          "position":5,
+          "url":"https://lumomarketingstudio.com/blog/schema-markup-chatgpt.html",
+          "name":"Does Schema Markup Actually Get You Cited by ChatGPT? What We've Seen"
+        },
+
+        {
+          "@type":"ListItem",
+          "position":6,
+          "url":"https://lumomarketingstudio.com/blog/geo-vs-seo.html",
+          "name":"GEO vs SEO: What's Actually Different (and What Carries Over)"
+        }
+
       ]
     }
 
@@ -144,9 +182,7 @@
   <img src="assets/dune logos/dune-logo-5.png" alt="LUMO logo">
 </a>
 
-    <button class="menu-toggle" aria-label="Open menu">
-        ☰
-    </button>
+ <button class="menu-toggle" aria-label="Open menu">☰</button>
 
     <nav>
       <a href="GEO.html">GEO</a>
@@ -165,16 +201,14 @@
 
 <section class="blog-hero">
 
-    <div class="blog-label">
-        LUMO BLOGS
-    </div>
+   
 
-    <h1>
-        GEO & AI SEARCH VISIBILITY
-        <span>INSIGHTS</span>
+    <h1 class="fade-up">
+        GEO & AI SEARCH <span>VISIBILITY
+        INSIGHTS</span>
     </h1>
 
-    <p>
+    <p class="fade-up">
         Explore expert articles covering
         Generative Engine Optimization,
         AI Search, SEO, Website Design,
@@ -191,7 +225,7 @@
 
 <section class="blog-filters">
 
-<section class="blog-filters">
+<section class="blog-filters fade-up">
 
     <button class="active" data-filter="all">All Articles</button>
  <button data-filter="geo">
@@ -223,9 +257,9 @@
      BLOG GRID
 ========================= -->
 
-<section class="blog-grid">
+<section class="blog-grid fade-up">
 
-  <a href="blog/what-is-geo.html" class="blog-card" data-category="geo">
+  <a href="blog/what-is-GEO-at-LUMO.html" class="blog-card" data-category="geo">
 
     <div class="blog-pill">
         GEO Fundamentals
@@ -236,13 +270,13 @@
     </h3>
 
     <p>
-        Learn how GEO helps businesses become visible in AI-powered search engines like ChatGPT, Gemini, Claude, and Perplexity. Discover why traditional SEO alone is no longer enough for modern online visibility.
+        Learn how GEO helps businesses become visible in AI powered search engines like ChatGPT, Gemini, Claude, and Perplexity. Discover why traditional SEO alone is no longer enough for modern online visibility.
     </p>
 
     <span>
         June 25, 2026
     </span>
-
+<!--
 </a>
 <a href="blogs/what-is-geo.html" class="blog-card" data-category="ai-search">
 
@@ -251,11 +285,13 @@
         </div>
 
         <h3>
-            What Is Generative Engine Optimization?
+            How to Test Your Brand's AI Visibility Firsthand
         </h3>
 
         <p>
-            Learn how GEO helps businesses increase visibility in AI-powered search platforms like ChatGPT, Gemini, Claude, and Perplexity.
+              Learn about our approach to testing a variety of prompts to gather a sense of how
+            often your brand is being recommended, and in what position. Find a better sense of what exactly 
+            AI extracts from your website and how you stack up against competitors. 
         </p>
 
         <span>
@@ -267,15 +303,14 @@
     <a href="#" class="blog-card">
 
         <div class="blog-pill">
-            AI Search Trends
+            How Does
         </div>
 
         <h3>
-            How AI Search Is Changing Marketing
+            How Does LUMO's AI Visibility Audit Work?
         </h3>
 
         <p>
-            Explore how conversational AI is reshaping online discovery and what businesses must do to stay visible.
         </p>
 
         <span>
@@ -295,7 +330,6 @@
         </h3>
 
         <p>
-            Discover why schema markup and entity relationships are becoming essential for AI visibility.
         </p>
 
         <span>
@@ -311,11 +345,10 @@
         </div>
 
         <h3>
-            Local GEO Strategies for Small Businesses
+            Does Schema Markup Actually Get You Cited by ChatGPT? What We've Seen
         </h3>
 
         <p>
-            Learn how local companies can increase their chances of being recommended by AI systems.
         </p>
 
         <span>
@@ -331,11 +364,9 @@
         </div>
 
         <h3>
-            GEO Visibility Audit Walkthrough
-        </h3>
+        GEO vs SEO: What's Actually Different (and What Carries Over)        </h3>
 
         <p>
-            See how LUMO's AI Visibility Audit identifies opportunities to improve AI search performance.
         </p>
 
         <span>
@@ -343,8 +374,8 @@
         </span>
 
     </a>
+  -->
 </section>
-
 
  <!-- FOOTER -->
 <footer class="footer">
@@ -384,53 +415,20 @@
   </div>
 </footer>
     
-    <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(".fade-up, blur-reveal").forEach(el => {
-      observer.observe(el);
-    });
-  </script>
 <script>
-  const videos = document.querySelectorAll('.hover-video');
-
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-  if (isMobile) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.play();
-        } else {
-          entry.target.pause();
+            entry.target.classList.add("in-view");
         }
-      });
-    }, { threshold: 0.5 });
-
-    videos.forEach(video => observer.observe(video));
-  } else {
-    videos.forEach(video => {
-      video.pause();
-
-      video.parentElement.addEventListener('mouseenter', () => {
-        video.play();
-      });
-
-      video.parentElement.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0;
-      });
     });
-  }
+}, {
+    threshold: 0.1
+});
 
-
-
+document.querySelectorAll(".fade-up, .blur-reveal").forEach(el => {
+    observer.observe(el);
+});
 </script>
 <script>
 const menuButton = document.querySelector('.menu-toggle');
@@ -475,4 +473,5 @@ filterButtons.forEach(button => {
 
 });
 </script>
+
 </body>

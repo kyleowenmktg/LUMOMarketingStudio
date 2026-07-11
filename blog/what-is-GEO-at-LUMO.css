@@ -1,0 +1,718 @@
+
+
+@media (max-width: 768px) {
+
+
+  /* FOOTER (IDENTICAL BEHAVIOR) */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 40px 0 28px;
+  }
+}
+
+
+
+
+/* FOOTER */
+.footer {
+  padding: 60px 0 40px;
+  width: 100%;
+  position: relative;
+  background: rgba(255,255,255, 0.08) /* 👈 blends with page */
+}
+
+.footer-content {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  color: #ffffff; 
+}
+
+/* LEFT */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer-location {
+  font-weight: 500;
+}
+
+.footer-email {
+  opacity: 0.8;
+}
+
+/* SOCIAL ICONS BELOW EMAIL */
+.footer-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.footer-socials a {
+  color: #144961;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+}
+
+
+
+/* RIGHT */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+
+.blog-card{
+    transition:
+        transform .35s,
+        opacity .3s;
+}
+
+@media(max-width:768px){
+
+.blog-filters{
+  
+    gap:6px;
+    padding:0 4vw 50px;
+}
+
+.blog-filters button{
+    padding:8px 12px;
+    font-size:.72rem;
+    letter-spacing:.2px;
+}
+}
+
+/* ==========================
+   PAGE BACKGROUND
+========================== */
+.blog-bg{
+    position:relative;
+    min-height:100vh;
+    background-image:url("../assets/AFTS/blog\ bg.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ==========================
+   ARTICLE HERO
+========================== */
+.blog-hero{
+    padding:190px 8vw 60px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.blog-label{
+    padding:10px 18px;
+    border-radius:10px;
+    border:1px solid rgba(95,235,204,.25);
+    background:rgba(20,73,97,.18);
+    color:#5febcc;
+    letter-spacing:2px;
+    font-size:.82rem;
+    margin-bottom:28px;
+    backdrop-filter:blur(12px);
+}
+
+.blog-hero h1{
+    font-size:clamp(2.4rem,6vw,4.2rem);
+    line-height:1.15;
+    font-weight:600;
+    color:#fff;
+    max-width:900px;
+}
+
+.blog-hero p{
+    margin-top:24px;
+    max-width:700px;
+    line-height:1.8;
+    opacity:.75;
+    font-size:1.05rem;
+}
+
+/* Byline — reuses .blog-filters as its wrapper in the HTML */
+.blog-filters{
+    width:100%;
+    text-align:center;
+    padding:0 8vw 60px;
+}
+
+.blog-filters span{
+    color:#fff;
+    opacity:.55;
+    font-size:.9rem;
+}
+
+/* ==========================
+   QUICK ANSWER BOX
+========================== */
+.featured-blog{
+    padding:0 8vw 70px;
+}
+
+.featured-content{
+    max-width:850px;
+    margin:0 auto;
+    padding:45px;
+    border-radius:18px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+}
+
+.featured-tag{
+    display:block;
+    color:#5febcc;
+    letter-spacing:2px;
+    font-size:.82rem;
+    margin-bottom:16px;
+}
+
+.featured-content p{
+    line-height:1.9;
+    opacity:.85;
+    font-size:1.05rem;
+}
+
+/* ==========================
+   ARTICLE BODY
+========================== */
+.geo-page{
+    padding:0 8vw 80px;
+    max-width:880px;
+    margin:0 auto;
+}
+
+.geo-page h2{
+    font-size:clamp(1.6rem,3vw,2.2rem);
+    font-weight:600;
+    color:#fff;
+    margin:50px 0 18px;
+}
+
+.geo-page h2:first-child{
+    margin-top:0;
+}
+
+.geo-page p{
+    font-size:1.05rem;
+    line-height:1.9;
+    opacity:.82;
+    margin-bottom:22px;
+}
+
+.geo-page ul{
+    margin:0 0 30px 22px;
+    line-height:1.9;
+    opacity:.85;
+}
+
+.geo-page ul li{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   STAT / TAKEAWAY CALLOUT
+========================== */
+.geo-section{
+    padding:0 8vw 80px;
+}
+
+.article-stat{
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
+    padding:50px;
+    border-radius:14px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    backdrop-filter:blur(12px);
+}
+
+.article-stat h3{
+    font-size:clamp(2rem,5vw,3rem);
+    font-weight:700;
+    color:#5febcc;
+    margin-bottom:14px;
+}
+
+.article-stat p{
+    opacity:.75;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+.center-title{
+    font-size:clamp(1.8rem,4vw,2.6rem);
+    font-weight:600;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ==========================
+   FAQ ACCORDION
+========================== */
+.geo-faq{
+    max-width:780px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.faq-item{
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:8px;
+    overflow:hidden;
+    background:rgba(255,255,255,.03);
+    transition:all .3s ease;
+}
+
+.faq-item:hover{
+    border-color:rgba(255,255,255,.25);
+    background:rgba(255,255,255,.05);
+}
+
+.faq-question{
+    width:100%;
+    padding:20px 22px;
+    background:transparent;
+    border:none;
+    color:#fff;
+    font-size:1.05rem;
+    text-align:left;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.faq-icon{
+    font-size:1.4rem;
+    color:#5febcc;
+    transition:transform .3s ease;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s ease, padding .3s ease;
+    padding:0 22px;
+}
+
+.faq-answer p{
+    padding-bottom:20px;
+    line-height:1.7;
+    opacity:.85;
+}
+
+.faq-item.active .faq-answer{
+    max-height:300px;
+    padding-top:6px;
+}
+
+.faq-item.active .faq-icon{
+    transform:rotate(45deg);
+}
+
+/* ==========================
+   CTA
+========================== */
+.geo-cta{
+    max-width:780px;
+    margin:0 auto 100px;
+    padding:70px 8vw;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:14px;
+}
+
+.geo-cta h2{
+    font-size:clamp(2rem,4vw,3rem);
+    font-weight:500;
+    margin-bottom:18px;
+}
+
+.geo-cta p{
+    max-width:600px;
+    margin:0 auto 32px;
+    opacity:.8;
+    line-height:1.7;
+}
+
+.cta-button{
+    display:inline-block;
+    padding:16px 40px;
+    font-size:1rem;
+    letter-spacing:1.5px;
+    color:#fff;
+    border:1px solid #fff;
+    background:transparent;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+.cta-button:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ==========================
+   RELATED ARTICLES GRID
+========================== */
+.blog-grid{
+    padding:0 8vw 120px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:34px;
+}
+
+.blog-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:20px;
+    min-height:260px;
+    padding:40px;
+    border-radius:18px;
+    text-decoration:none;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    color:#fff;
+    transition:transform .35s, border-color .35s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(95,235,204,.3);
+}
+
+.blog-pill{
+    width:fit-content;
+    padding:8px 14px;
+    border-radius:999px;
+    background:rgba(95,235,204,.08);
+    border:1px solid rgba(95,235,204,.15);
+    color:#5febcc;
+    letter-spacing:1px;
+    font-size:.75rem;
+}
+
+.blog-card h3{
+    font-size:1.4rem;
+    line-height:1.3;
+    font-weight:500;
+}
+
+.blog-card p{
+    line-height:1.7;
+    opacity:.7;
+}
+
+.blog-card span{
+    margin-top:auto;
+    opacity:.5;
+    font-size:.85rem;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+  padding: 60px 0 40px;
+  width: 100%;
+  background: rgba(255,255,255, 0.08);
+}
+
+.footer-content {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer-location {
+  font-weight: 500;
+}
+
+.footer-email {
+  opacity: 0.8;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media (max-width:768px){
+
+  .blog-hero{
+      padding:150px 6vw 40px;
+  }
+
+  .geo-page{
+      padding:0 6vw 60px;
+  }
+
+  .geo-page h2{
+      font-size:1.5rem;
+      margin:36px 0 14px;
+  }
+
+  .geo-page p{
+      font-size:1rem;
+  }
+
+  .article-stat{
+      padding:32px;
+  }
+
+  .article-stat h3{
+      font-size:2rem;
+  }
+
+  .blog-grid{
+      grid-template-columns:1fr;
+      padding:0 6vw 80px;
+  }
+
+  .geo-cta{
+      padding:50px 6vw;
+      margin-bottom:60px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .footer {
+    padding: 40px 0 28px;
+  }
+}
+
+
+
+/* NAV */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  flex-wrap: nowrap;
+}
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 14px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav nav {
+  display: flex;
+  gap: 16px;               /* space between links */
+  flex-shrink: 1;           /* allows links to shrink */
+}
+
+.nav nav a {
+  white-space: nowrap;      /* prevent wrapping */
+  flex-shrink: 1;           /* allow link text to shrink */
+  font-size: 14px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+
+
+/* Hide the hamburger button on desktop */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        padding: 16px 20px;
+    }
+
+    .logo img {
+        height: 44px;
+    }
+
+    /* Show the hamburger, hide the inline links */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 1001;
+        padding-right: 18px;
+    }
+
+    .nav nav {
+        display: none;               /* hidden until toggled open */
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+        min-width: 200px;
+        background: rgba(76, 110, 110, 0.97);
+        border: 1px solid rgba(255, 255, 255, .08);
+        border-radius: 14px;
+        backdrop-filter: blur(18px);
+        z-index: 999;
+    }
+
+    .nav nav.active {
+        display: flex;               /* shown when menu-toggle is clicked */
+    }
+
+    .nav nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+.logo img {
+  height: 63px; /* adjust to taste */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+
+ 
+
+    .logo img {
+        height: 44px;
+    }
+  }
